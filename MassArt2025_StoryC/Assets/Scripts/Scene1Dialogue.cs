@@ -28,6 +28,10 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
+        public GameObject Choice1d;
+        public GameObject Choice2a;
+        public GameObject Choice2b;
+        public GameObject Choice2c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -47,6 +51,10 @@ public class Scene1Dialogue : MonoBehaviour {
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
+             Choice1d.SetActive(false);
+             Choice2a.SetActive(false);
+             Choice2b.SetActive(false);
+             Choice2c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
@@ -100,45 +108,35 @@ public void Next(){
                 allowSpace = false;
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
-                Choice1c.SetActive(true); // function Choice1bFunct()
+                Choice1c.SetActive(true); // function Choice1cFunct()
+                Choice1d.SetActive(true); // function Choice1dFunct()
         }
 
-       // after choice 1a
-       else if (primeInt == 20){
+       // after choice 1c
+       else if (primeInt == 13){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
-        }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                // Turn off the "Next" button, turn on "Scene" button/s
+                Char2name.text = "Booger Kid";
+                Char2speech.text = "Wanna see my booger collection?";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
+                Choice2a.SetActive(true); 
+                Choice2b.SetActive(true); 
+                Choice2c.SetActive(true); 
+               
         }
+      
 
-       // after choice 1b
-       else if (primeInt == 30){
+       // after choice 1a
+       else if (primeInt == 20){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+                Char2name.text = "Wierd Kid";
+                Char2speech.text = "Well I dont.";
+                primeInt = 3; // so hitting "NEXT" goes to primeInt==20!
         }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
-        }
+  
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -146,28 +144,101 @@ public void Next(){
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't know what you're talking about!";
+                Char1speech.text = "I like sharks";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 19; // so hitting "NEXT" goes to primeInt==20!
+                primeInt = 19; 
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
         public void Choice1bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "No I don't like you.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 29; // so hitting "NEXT" goes to primeInt==30!
+                primeInt = 3; 
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
+            public void Choice1cFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "Yeah, I guess so.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 12; 
+                ArtChar1b.SetActive(true);
+                ArtChar1a.SetActive(false);
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+            public void Choice1dFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 29; 
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+
+         public void Choice2aFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "I like sharks";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 190; 
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice2bFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "No I don't like you.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 300; 
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+            public void Choice2cFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "Yeah, I guess so.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 120; 
+                ArtChar1b.SetActive(true);
+                ArtChar1a.SetActive(false);
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+
 
         public void SceneChange1(){
                SceneManager.LoadScene("Scene2a");
@@ -175,17 +246,5 @@ public void Next(){
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene2b");
         }
-                // Function for Choice1c button
-                public void Choice1cFunct(){
-                        Char1name.text = "YOU";
-                        Char1speech.text = "I have another idea...";
-                        Char2name.text = "";
-                        Char2speech.text = "";
-                        primeInt = 39; // so hitting "NEXT" goes to primeInt==40!
-                        Choice1a.SetActive(false);
-                        Choice1b.SetActive(false);
-                        Choice1c.SetActive(false);
-                        nextButton.SetActive(true);
-                        allowSpace = true;
-                }
+              
 }
