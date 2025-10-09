@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e190b0c4f903a8247a1ce06edcea5cc9
+guid: 12beb583a5ace4bdc9cd2f84a571a3a8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7478938485065457997
-    second: ImageChar1d_0
+      213: 2225298981445554259
+    second: bg_bathroom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ImageChar1d_0
+      name: bg_bathroom_0
       rect:
         serializedVersion: 2
-        x: 733
+        x: 0
         y: 0
-        width: 432
-        height: 583
+        width: 2176
+        height: 1224
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bedcaca219753890800000000000000
-      internalID: -7478938485065457997
+      spriteID: 350d91c22a9d1ee10800000000000000
+      internalID: 2225298981445554259
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ImageChar1d_0: -7478938485065457997
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
