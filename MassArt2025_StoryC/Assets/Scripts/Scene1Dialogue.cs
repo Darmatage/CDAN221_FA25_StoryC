@@ -79,45 +79,22 @@ public void Next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
+                Char2name.text = "Wierd Kid";
+                Char2speech.text = "Do you like me?";
         }
        else if (primeInt ==3){
                 Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
+                Char1speech.text = "Bro I dont even know you";
                 Char2name.text = "";
                 Char2speech.text = "";
                 //gameHandler.AddPlayerStat(1);
+
         }
        else if (primeInt == 4){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
-       else if (primeInt == 5){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
+                Char2name.text = "Wierd Kid";
+                Char2speech.text = "Do you like me?";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
