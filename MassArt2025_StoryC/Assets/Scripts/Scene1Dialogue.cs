@@ -9,11 +9,15 @@ using UnityEngine.Audio;
 public class Scene1Dialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
-        public int primeInt = 1;        // This integer drives game progress!
+        public int primeInt = 0;        // This integer drives game progress!
         public TMP_Text Char1name;
         public TMP_Text Char1speech;
         public TMP_Text Char2name;
         public TMP_Text Char2speech;
+        public TMP_Text Char3name;
+        public TMP_Text Char3speech;
+        public TMP_Text Char4name;
+        public TMP_Text Char4speech;
        //public TMP_Text Char3name;
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
@@ -23,6 +27,7 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject ArtChar1d;
         public GameObject ArtChar1e;
         public GameObject ArtChar1f;
+        public GameObject ArtCharteacher;
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -50,6 +55,7 @@ public class Scene1Dialogue : MonoBehaviour {
              ArtChar1d.SetActive(false);
              ArtChar1e.SetActive(false);
              ArtChar1f.SetActive(false);
+             ArtCharteacher.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -89,17 +95,68 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
                 ArtChar1d.SetActive(false);
                 DialogueDisplay.SetActive(true);
+                Char1name.text = "You";
+                Char1speech.text = "This class is so boring... Miss Smith is talking about that divorce thing again";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+                }
+        else if (primeInt == 3){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtCharteacher.SetActive(true);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Miss Smith";
+                Char3speech.text = "Blah Blah Blah Alimony Blah Blah Blah";
+                Char4name.text = "";
+                Char4speech.text = "";
+        }
+        else if (primeInt == 4){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtCharteacher.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "You";
+                Char1speech.text = "And that weird kid keeps staring at me..";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+        }
+        else if (primeInt == 5){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                //DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Wierd Kid";
                 Char2speech.text = "Do you like me?";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
         }
-       else if (primeInt ==3){
+       else if (primeInt ==6){
                 Char1name.text = "YOU";
                 Char1speech.text = "Bro I dont even know you";
                 Char2name.text = "";
@@ -107,10 +164,10 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
 
         }
-       else if (primeInt == 4){
+       else if (primeInt == 7){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Wierd Kid";
+                Char2name.text = "Weird Kid";
                 Char2speech.text = "Do you like me?";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
@@ -141,7 +198,7 @@ public void Next(){
        else if (primeInt == 20){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Wierd Kid";
+                Char2name.text = "Weird Kid";
                 Char2speech.text = "Well I dont.";
                 primeInt = 3; // so hitting "NEXT" goes to primeInt==20!
         }
@@ -158,10 +215,31 @@ public void Next(){
                 
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Wierd Kid";
+                Char2name.text = "Weird Kid";
                 Char2speech.text = "TEACHER! TEACHER! HE'S BEING ANNOYING!!!";
                 nextButton.SetActive(true);
                 allowSpace = true;
+               
+        }
+         else if (primeInt == 31){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(false);
+                ArtCharteacher.SetActive(true);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Miss Smith";
+                Char3speech.text = "YOU! I FORGET YOUR NAME. GO TO THE PRINCIPALS OFFICE!";
+                NextScene1Button.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
                
         }
 
@@ -209,7 +287,7 @@ public void Next(){
                 Char1speech.text = "No I don't like you.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 3; 
+                primeInt = 6; 
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
@@ -271,7 +349,7 @@ public void Next(){
                 ArtChar1d.SetActive(false);
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 3; 
+                primeInt = 6; 
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 Choice2c.SetActive(false);
@@ -303,8 +381,9 @@ public void Next(){
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
                 Choice3c.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
+                NextScene2Button.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
         }
         public void Choice3bFunct(){
                 Char1name.text = "YOU";
