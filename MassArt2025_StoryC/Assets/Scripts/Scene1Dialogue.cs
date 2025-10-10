@@ -32,6 +32,9 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject Choice2a;
         public GameObject Choice2b;
         public GameObject Choice2c;
+        public GameObject Choice3a;
+        public GameObject Choice3b;
+        public GameObject Choice3c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -55,6 +58,9 @@ public class Scene1Dialogue : MonoBehaviour {
              Choice2a.SetActive(false);
              Choice2b.SetActive(false);
              Choice2c.SetActive(false);
+             Choice3a.SetActive(false);
+             Choice3b.SetActive(false);
+             Choice3c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
@@ -84,6 +90,9 @@ public void Next(){
         }
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -136,6 +145,46 @@ public void Next(){
                 Char2speech.text = "Well I dont.";
                 primeInt = 3; // so hitting "NEXT" goes to primeInt==20!
         }
+
+           // after choice 1c
+       else if (primeInt == 30){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(true);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(false);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Wierd Kid";
+                Char2speech.text = "TEACHER! TEACHER! HE'S BEING ANNOYING!!!";
+                nextButton.SetActive(true);
+                allowSpace = true;
+               
+        }
+
+        else if (primeInt == 191){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(true);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Booger Kid";
+                Char2speech.text = "It's in my locker.";
+                Choice3a.SetActive(true);
+                Choice3b.SetActive(true);
+                Choice3c.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
+               
+        }
+      
   
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -184,9 +233,13 @@ public void Next(){
                 allowSpace = true;
         }
             public void Choice1dFunct(){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
                 Char2name.text = "";
+                Char1speech.text = "NO I HATE YOU STOP TALKING TO ME";
                 Char2speech.text = "";
                 primeInt = 29; 
                 Choice1a.SetActive(false);
@@ -199,42 +252,93 @@ public void Next(){
 
          public void Choice2aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I like sharks";
+                Char1speech.text = "Sure why not.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 190; 
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                Choice1c.SetActive(false);
-                Choice1d.SetActive(false);
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
+                Choice2c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
         public void Choice2bFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "No I don't like you.";
+                Char1speech.text = "No thats gross";
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 300; 
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                Choice1c.SetActive(false);
-                Choice1d.SetActive(false);
+                primeInt = 3; 
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
+                Choice2c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
             public void Choice2cFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah, I guess so.";
+                Char1speech.text = "I like sharks";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 120; 
-                ArtChar1b.SetActive(true);
+                primeInt = 190; 
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
+                Choice2c.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        
+
+         public void Choice3aFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "Whatever gets me out of this class.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 290; 
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3c.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice3bFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "[YOU BITE DOWN HARD ON BOOGER KIDS LEG]";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 29;
                 ArtChar1a.SetActive(false);
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                Choice1c.SetActive(false);
-                Choice1d.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(true); 
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3c.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+            public void Choice3cFunct(){
+                Char1name.text = "YOU";
+                Char1speech.text = "I like sharks";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 29; 
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(false);
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
