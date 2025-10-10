@@ -121,7 +121,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Miss Smith";
-                Char3speech.text = "Blah Blah Blah Alimony Blah Blah Blah";
+                Char3speech.text = "—and I barely get ANYTHING from the Alimony—";
                 Char4name.text = "";
                 Char4speech.text = "";
         }
