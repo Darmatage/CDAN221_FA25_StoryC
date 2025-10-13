@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Char_BoogerKid02_0: 1218764257267522772
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

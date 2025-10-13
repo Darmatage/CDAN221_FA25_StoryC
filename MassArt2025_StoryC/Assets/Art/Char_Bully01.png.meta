@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Char_Bully01_0: -4327154914902007187
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

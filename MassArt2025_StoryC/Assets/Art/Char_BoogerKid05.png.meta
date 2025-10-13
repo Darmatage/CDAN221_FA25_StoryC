@@ -172,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Char_BoogerKid05_0: -4094530110561577462
+      Char_BoogerKid05_1: 6054811499431614143
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
