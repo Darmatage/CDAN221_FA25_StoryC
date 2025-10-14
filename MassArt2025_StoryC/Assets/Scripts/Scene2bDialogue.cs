@@ -48,6 +48,7 @@ public class Scene2bDialogue : MonoBehaviour {
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
+             Choice1d.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
@@ -102,6 +103,8 @@ public void Next(){
                 Choice1a.SetActive(true); // function Choice1aFunct()
                 Choice1b.SetActive(true); // function Choice1bFunct()
                 Choice1c.SetActive(true); // function Choice1bFunct()
+                Choice1d.SetActive(true); // function Choice1bFunct()
+
         }
 
        // after choice 1a
@@ -154,6 +157,7 @@ public void Next(){
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -166,6 +170,7 @@ public void Next(){
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
+                Choice1d.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -186,6 +191,7 @@ public void Next(){
                         Choice1a.SetActive(false);
                         Choice1b.SetActive(false);
                         Choice1c.SetActive(false);
+                        Choice1d.SetActive(false);
                         nextButton.SetActive(true);
                         allowSpace = true;
                 }
