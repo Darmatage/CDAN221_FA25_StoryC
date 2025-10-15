@@ -673,7 +673,7 @@ public void Next(){
                SceneManager.LoadScene("Scene2a");
         }
         public void SceneLabFunct(){
-                SceneManager.LoadScene("Scene2b");
+                SceneManager.LoadScene("Scene4a");
         }
          public void SceneCafeteriaFunct(){
                 SceneManager.LoadScene("Scene2c");
