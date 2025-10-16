@@ -200,7 +200,7 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Weird Kid";
                 Char2speech.text = "Well I dont.";
-                primeInt = 3; // so hitting "NEXT" goes to primeInt==20!
+                primeInt = 6; // so hitting "NEXT" goes to primeInt==20!
         }
 
            // after choice 1c
