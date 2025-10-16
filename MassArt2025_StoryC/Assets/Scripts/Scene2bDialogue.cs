@@ -684,10 +684,10 @@ public void Next(){
                SceneManager.LoadScene("Scene2a");
         }
         public void SceneLabFunct(){
-                SceneManager.LoadScene("Scene4a");
+                SceneManager.LoadScene("Scene4b");
         }
          public void ScenePrincipalFunct(){
-                SceneManager.LoadScene("Scene2c");
+                SceneManager.LoadScene("Scene5");
         }
 
 }
