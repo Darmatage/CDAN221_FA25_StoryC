@@ -87,7 +87,7 @@ public void Next(){
                 Char2speech.text = "I forget why we are here.";
                 
         }
-       else if (primeInt ==3){
+       else if (primeInt == 3){
                 
                 Char1name.text = "YOU";
                 Char1speech.text = "Me too.";

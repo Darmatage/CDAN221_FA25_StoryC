@@ -1216,6 +1216,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -279
       objectReference: {fileID: 0}
+    - target: {fileID: 1633695765266322214, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6663181299408003337, guid: 6807f06c7d469914db07f3ac98f68126, type: 3}
     - target: {fileID: 5520495696151593958, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_Name
       value: DIALOGUE_DISPLAY
@@ -1309,7 +1313,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 217676467861700973, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
+    - {fileID: 4105398028878750473, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
