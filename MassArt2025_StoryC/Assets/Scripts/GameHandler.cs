@@ -10,7 +10,7 @@ public class GameHandler : MonoBehaviour{
         public static bool gotLighter = false; //GameHandler.gotLighter
         public static bool gotPizza = false; //GameHandler.gotPizza
         public static bool gotMoney = false; //GameHandler.gotMoney
-        //public static float moneyAmt = 0f; //GameHandler.moneyAmt
+        public static float scene1annoyanceAmt = 0f; //GameHandler.moneyAmt
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }
