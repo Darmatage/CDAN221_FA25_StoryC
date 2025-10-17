@@ -281,20 +281,40 @@ public void Next(){
                 Choice1d.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+
+                GameHandler.scene1annoyanceAmt += 1;
+
+    if (GameHandler.scene1annoyanceAmt > 3) {
+        ArtChar1c.SetActive(true);
+        ArtChar1a.SetActive(false);
+        primeInt = 29;
+    } else {
+        primeInt = 6;
+    }
         }
-        public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "No I don't like you.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 6; 
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                Choice1c.SetActive(false);
-                Choice1d.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
+        public void Choice1bFunct() {
+    Char1name.text = "YOU";
+    Char1speech.text = "No I don't like you.";
+    Char2name.text = "";
+    Char2speech.text = "";
+    
+    Choice1a.SetActive(false);
+    Choice1b.SetActive(false);
+    Choice1c.SetActive(false);
+    Choice1d.SetActive(false);
+    nextButton.SetActive(true);
+    allowSpace = true;
+
+    GameHandler.scene1annoyanceAmt += 1;
+
+    if (GameHandler.scene1annoyanceAmt > 3) {
+        ArtChar1c.SetActive(true);
+        ArtChar1a.SetActive(false);
+        primeInt = 29;
+    } else {
+        primeInt = 6;
+    }
+}
             public void Choice1cFunct(){
                 Char1name.text = "YOU";
                 Char1speech.text = "Yeah, I guess so.";
