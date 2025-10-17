@@ -16,10 +16,7 @@ public class Scene7Dialogue : MonoBehaviour {
         public TMP_Text Char2speech;
         //public TMP_Text Char3name;
         //public TMP_Text Char3speech;
-        //public TMP_Text Char4name;
-        //public TMP_Text Char4speech;
-       //public TMP_Text Char3name;
-       //public TMP_Text Char3speech;
+
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
@@ -33,10 +30,8 @@ public class Scene7Dialogue : MonoBehaviour {
 
         public GameObject Choice1a;
         public GameObject Choice1b;
-
         public GameObject Choice2a;
         public GameObject Choice2b;
-
         public GameObject NextScene1Button;
         //public GameObject NextScene2Button;
         public GameObject nextButton;
@@ -45,44 +40,44 @@ public class Scene7Dialogue : MonoBehaviour {
 
 
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
-        void Start(){  
-             DialogueDisplay.SetActive(false);
-             ArtChar1a.SetActive(false);
-             ArtChar1b.SetActive(false);
-             ArtChar1c.SetActive(false);
-             ArtChar1d.SetActive(false);
-                ArtPizza.SetActive(false);
-             ArtLighter.SetActive(false);
+	void Start(){  
+		DialogueDisplay.SetActive(false);
+		ArtChar1a.SetActive(false);
+		ArtChar1b.SetActive(false);
+		ArtChar1c.SetActive(false);
+		ArtChar1d.SetActive(false);
+		ArtPizza.SetActive(false);
+		ArtLighter.SetActive(false);
 
-             ArtBG1.SetActive(true);
-             Choice1a.SetActive(false);
-             Choice1b.SetActive(false);
-             Choice2a.SetActive(false);
-             Choice2b.SetActive(false);
-             NextScene1Button.SetActive(false);
-             //NextScene2Button.SetActive(false);
-             nextButton.SetActive(true);
-        }
+		ArtBG1.SetActive(true);
+		Choice1a.SetActive(false);
+		Choice1b.SetActive(false);
+		Choice2a.SetActive(false);
+		Choice2b.SetActive(false);
+		NextScene1Button.SetActive(false);
+		//NextScene2Button.SetActive(false);
+		nextButton.SetActive(true);
+	}
 
 // Use the spacebar as a faster "Next" button:
-        void Update(){        
-             if (allowSpace == true){
-                 if (Input.GetKeyDown("space")){
-                      Next();
-                 }
+	void Update(){        
+		if (allowSpace == true){
+			if (Input.GetKeyDown("space")){
+				Next();
+			}
 
-                 // secret debug code: go back 1 Story Unit, if NEXT is visible
-                 if (Input.GetKeyDown("p")) {
-                      primeInt -= 2;
-                      Next();
-                 }
-             }
-        }
+		// secret debug code: go back 1 Story Unit, if NEXT is visible
+			if (Input.GetKeyDown("p")) {
+				primeInt -= 2;
+					Next();
+			}
+		}
+	}
 
 //Story Units! The main story function.
 //Players hit [NEXT] to progress to the next primeInt:
-public void Next(){
-        primeInt += 1;
+	public void Next(){
+		primeInt += 1;
         if (primeInt == 1){
                 // audioSource1.Play();
         }
