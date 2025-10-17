@@ -168,8 +168,292 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "King Principal";
                 Char2speech.text = "Why. Were. You. Sent. Here?";
+                ChoiceILikeSharks.SetActive(true);
+                ChoiceCry.SetActive(true);
+                ChoiceEat.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
                 
                 }
+
+                else if (primeInt == 19){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Why. Were. You. Sent. Here?";
+                ChoiceILikeSharks.SetActive(true);
+                ChoiceCry.SetActive(true);
+                ChoiceEat.SetActive(true);
+                nextButton.SetActive(false);
+                allowSpace = false;
+                
+                }
+
+                else if (primeInt == 30){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Ok. Name 5 sharks.";
+                
+                
+                }
+                else if (primeInt == 31){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Grate white, hammerhed, whale...";
+                Char2name.text = "";
+                Char2speech.text = "";
+                
+                
+                }
+                else if (primeInt == 32){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Ok.";
+                }
+                else if (primeInt == 33){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Red shark, blue shark";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 48; 
+                
+                
+                }
+                
+                
+                
+
+                else if (primeInt == 40){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Ew. Stop that.";
+                ChoiceILikeSharks.SetActive(false);
+                ChoiceCry.SetActive(false);
+                ChoiceEat.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+
+                }
+
+                else if (primeInt == 41){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "I said stop.";
+                ChoiceILikeSharks.SetActive(false);
+                ChoiceCry.SetActive(false);
+                ChoiceEat.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+
+                }
+
+                else if (primeInt == 42){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(true);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "If you stop crying you can have this candy.";
+                ChoiceILikeSharks.SetActive(false);
+                ChoiceCry.SetActive(false);
+                ChoiceEat.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+                }
+
+                else if (primeInt == 43){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "*Candy added to inventory*";
+                Char2name.text = "";
+                Char2speech.text = "";
+                ChoiceILikeSharks.SetActive(false);
+                ChoiceCry.SetActive(false);
+                ChoiceEat.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+                }
+                else if (primeInt == 44){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Can I have some money too?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                
+                }
+                else if (primeInt == 45){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Why?";
+                
+                }
+                else if (primeInt == 46){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "You made me cry.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                
+                }
+                else if (primeInt == 47){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Ok. \n *5 bucks added to inventory*";
+                
+                }
+
+                else if (primeInt == 48){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Is that all?";
+                Char2name.text = "";
+                Char2speech.text = "";
+                
+                }
+                else if (primeInt == 49){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Go back to class.";
+                
+                
+                }
+                else if (primeInt == 50){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "As if...";
+                Char2name.text = "";
+                Char2speech.text = "";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                
+                SceneBathroom.SetActive(true);
+                SceneCafeteria.SetActive(true);
+        }
+                else if (primeInt == 70){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Unbelievable, I can't believe you've done this. Unacceptable. Treason even.";
+                
+                
+                
+        }
+        else if (primeInt == 71){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "Mmmmmm yummy pens";
+                Char2name.text = "";
+                Char2speech.text = "";
+                
+                
+                
+        }
+        else if (primeInt == 72){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
+                DialogueDisplay.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "King Principal";
+                Char2speech.text = "Detention.";
+                
+                
+                
+        }
+        else if (primeInt == 73){
+                SceneManager.LoadScene("EndLose");
+        }
+       
        
       
   
@@ -183,7 +467,7 @@ public void Next(){
                 Char1speech.text = "I like sharks";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 19; 
+                primeInt = 29; 
                 ChoiceILikeSharks.SetActive(false);
                 ChoiceCry.SetActive(false);
                 ChoiceEat.SetActive(false);
@@ -192,10 +476,10 @@ public void Next(){
         }
         public void ChoiceCryFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "No I don't like you.";
+                Char1speech.text = "[You cry and get a bunch of snot all over your face]";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 6; 
+                primeInt = 39; 
                 ChoiceILikeSharks.SetActive(false);
                 ChoiceCry.SetActive(false);
                 ChoiceEat.SetActive(false);
@@ -204,25 +488,30 @@ public void Next(){
         }
             public void ChoiceEatFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Yeah, I guess so.";
+                Char1speech.text = "[You eat all of his pens. The red ones don't taste like cherry... and you are still hungry.]";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 12; 
-                ArtChar1b.SetActive(true);
+                primeInt = 69; 
+                ArtChar1b.SetActive(false);
                 ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
+                ArtChar1d.SetActive(false);
                 ChoiceILikeSharks.SetActive(false);
                 ChoiceCry.SetActive(false);
                 ChoiceEat.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                SceneBathroom.SetActive(false);
+                SceneCafeteria.SetActive(false);
         }
+        
            
 
         public void SceneBathroomFunct(){
-               SceneManager.LoadScene("Scene2b");
+               SceneManager.LoadScene("Scene8");
         }
         public void SceneCafeteriaFunct(){
-                SceneManager.LoadScene("Scene2a");
+                SceneManager.LoadScene("Scene7b");
         }
               
 }
