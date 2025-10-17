@@ -379,7 +379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_No
+      value: Button_Choice1b
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -608,7 +608,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_ILikeSharks
+      value: Button_Choice1d
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1021,7 +1021,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Yes
+      value: Button_Choice1a
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1507,10 +1507,10 @@ RectTransform:
   - {fileID: 1733750309}
   - {fileID: 169510131486472237}
   - {fileID: 1575734614}
-  - {fileID: 622958063}
-  - {fileID: 2127492029}
-  - {fileID: 376159045}
   - {fileID: 1539057524}
+  - {fileID: 376159045}
+  - {fileID: 2127492029}
+  - {fileID: 622958063}
   - {fileID: 36499842512016997}
   - {fileID: 1996613234}
   - {fileID: 1730188518}
@@ -1538,6 +1538,10 @@ MonoBehaviour:
   Char1speech: {fileID: 230599101}
   Char2name: {fileID: 577884147}
   Char2speech: {fileID: 1605196995}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
+  Char4name: {fileID: 0}
+  Char4speech: {fileID: 0}
   DialogueDisplay: {fileID: 2101430545}
   ArtChar1a: {fileID: 483954107}
   ArtChar1b: {fileID: 1451146037}
@@ -1545,10 +1549,18 @@ MonoBehaviour:
   ArtChar1d: {fileID: 84649615}
   ArtChar1e: {fileID: 749525009}
   ArtChar1f: {fileID: 1733750308}
+  ArtCharteacher: {fileID: 0}
   ArtBG1: {fileID: 357465926}
   Choice1a: {fileID: 867970976}
   Choice1b: {fileID: 73138136}
   Choice1c: {fileID: 469131057}
+  Choice1d: {fileID: 0}
+  Choice2a: {fileID: 0}
+  Choice2b: {fileID: 0}
+  Choice2c: {fileID: 0}
+  Choice3a: {fileID: 0}
+  Choice3b: {fileID: 0}
+  Choice3c: {fileID: 0}
   NextScene1Button: {fileID: 2005070680}
   NextScene2Button: {fileID: 524032349}
   nextButton: {fileID: 307902659}
@@ -1739,7 +1751,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change2
+      value: Button_SceneChange2
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1871,7 +1883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_IHateYou
+      value: Button_Choice1c
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1989,7 +2001,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change1
+      value: Button_SceneChange1
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

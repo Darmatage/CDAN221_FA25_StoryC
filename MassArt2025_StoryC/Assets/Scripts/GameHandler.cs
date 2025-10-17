@@ -7,7 +7,10 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
-        public static int playerStat1;
+        public static bool gotLighter = false; //GameHandler.gotLighter
+        public static bool gotPizza = false; //GameHandler.gotPizza
+        public static bool gotMoney = false; //GameHandler.gotMoney
+        //public static float moneyAmt = 0f; //GameHandler.moneyAmt
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }
