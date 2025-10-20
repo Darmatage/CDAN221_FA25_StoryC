@@ -85,7 +85,7 @@ public class Scene9Dialogue : MonoBehaviour {
         else if (primeInt == 2){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "I want food";
+                Char1speech.text = "The Nurses office";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -93,15 +93,15 @@ public class Scene9Dialogue : MonoBehaviour {
                 ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Cafeteria";
+                Char2name.text = "Gross ass kid";
+                Char2speech.text = "I'm sick AHHHHHHHHHH!!!!!";
         }
         else if (primeInt == 4){
                 ArtChar1a.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "What do you want.";
+                Char1name.text = "YOU";
+                Char1speech.text = "Oh he is sick ew";
+                Char2name.text = "";
+                Char2speech.text = "";
 
                  // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
@@ -115,40 +115,35 @@ public class Scene9Dialogue : MonoBehaviour {
 
 //AFTER CHOICE 1a:
         else if (primeInt == 10){
-                Char1name.text = "You";
-                Char1speech.text = "I'm really hungry. And a bully stole my milk";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Gross Ass Kid";
+                Char2speech.text = "AHHH CHOOO!!!!";
 
         }
         else if (primeInt == 11){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Ok loser.";
+                Char2name.text = "Gross Ass Kid";
+                Char2speech.text = "Thank u";
         }
        else if (primeInt == 12){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "That's $3.99";
-                if (GameHandler.gotMoney == true){
-                        GameHandler.gotMoney = false;
-                }
-                //if (GameHandler.moneyAmt >= 4){
-                        //GameHandler.moneyAmt -= 3.99f;
-                else {
-                       primeInt = 14; 
-                }
-
+                Char1name.text = "Nurse";
+                Char1speech.text = "You get a gold star!";
+                Char2name.text = "";
+                Char2speech.text = "";
         }
 
         else if (primeInt == 13){
                 Char1name.text = "YOU";
-                Char1speech.text = "Here is my money!";
-                //Char1speech.text = "Ok. " + GameHandler.moneyAmt + " left over.";
+                Char1speech.text = "Ok I am leave now.";
                 Char2name.text = "";
                 Char2speech.text = "";
+		 // Turn off the "Next" button, turn on "Choice" buttons
+                nextButton.SetActive(false);
+                allowSpace = false;
+                Choice2a.SetActive(true); // function Choice2aFunct()
+                
         }
 
         else if (primeInt == 14){
@@ -184,13 +179,13 @@ public class Scene9Dialogue : MonoBehaviour {
        else if (primeInt == 20){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Cute. My nephew likes sharks";
+                Char2name.text = "Gross Ass Kid";
+                Char2speech.text = "AHHH CHOOO!!!!";
         }
 
         else if (primeInt == 21){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok.";
+                Char1name.text = "Gross Ass Kid";
+                Char1speech.text = "[SNEEZES into your hands]";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
@@ -198,20 +193,20 @@ public class Scene9Dialogue : MonoBehaviour {
        else if (primeInt == 22){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Ok.";
+                Char2name.text = "Gross ass kid";
+                Char2speech.text = "ew";
         }
 
        else if (primeInt == 23){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok.";
+                Char1name.text = "Nurse";
+                Char1speech.text = "ew";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Choice" buttons
+            	// Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice2a.SetActive(true); // function Choice2aFunct() I hate your nephew
-                Choice2b.SetActive(true); // function Choice2bFunct() do YOU like sharks
+                Choice2a.SetActive(true);
+                NextScene1Button.SetActive(true);
         }
 
 
@@ -286,7 +281,7 @@ public class Scene9Dialogue : MonoBehaviour {
 //CHOICE 1: 
         public void Choice1aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Food! Gimme!";
+                Char1speech.text = "Give him tissues";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 9; 
@@ -310,7 +305,7 @@ public class Scene9Dialogue : MonoBehaviour {
 //CHOICE 2:
          public void Choice2aFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "I hate your nephew.";
+                Char1speech.text = "Hold out your hands";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29; 
