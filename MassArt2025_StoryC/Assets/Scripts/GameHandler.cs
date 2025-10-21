@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
+        public static bool gotdodgeball = true; //GameHandler.gotLighter
         public static bool gotLighter = false; //GameHandler.gotLighter
         public static bool gotPizza = false; //GameHandler.gotPizza
         public static bool gotMoney = false; //GameHandler.gotMoney
