@@ -103,7 +103,7 @@ public void Next(){
                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "(Finally... now I just have to find my favorite toilet.)";
+                Char1speech.text = "(Finally... now I just have to find my favorite toilett.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
