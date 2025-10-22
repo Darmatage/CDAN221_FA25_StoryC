@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene4aDialogue : MonoBehaviour {
+public class Scene4bDialogue : MonoBehaviour {
 // These are the script variables.
 // For more character images / buttons, copy & renumber the variables:
         public int primeInt = 1;        // This integer drives game progress!
@@ -17,8 +17,8 @@ public class Scene4aDialogue : MonoBehaviour {
         public TMP_Text Char3name;
         public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
-        public GameObject ImageChar1e;
-        public GameObject ImageChar1f;
+        public GameObject ImageChar1a;
+        public GameObject ImageChar1b;
         public GameObject ImageChar2a;
         public GameObject ImageChar2b;
         public GameObject ImageChar2c;
@@ -35,6 +35,7 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -43,8 +44,8 @@ public class Scene4aDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
         
-             ImageChar1e.SetActive(false);
-             ImageChar1f.SetActive(false);
+             ImageChar1a.SetActive(false);
+             ImageChar1b.SetActive(false);
              ImageChar2a.SetActive(false);
              ImageChar2b.SetActive(false);
              ImageChar2c.SetActive(false);
@@ -60,6 +61,7 @@ public class Scene4aDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
+             NextScene4Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -89,19 +91,19 @@ public void Next(){
 
                 else if (primeInt == 2)
                 {
-                        ImageChar1e.SetActive(true);
+                        ImageChar1a.SetActive(true);
              
                         DialogueDisplay.SetActive(true);
                         Char1name.text = "";
                         Char1speech.text = "";
                         Char2name.text = "";
                         Char2speech.text = "";
-                        Char3name.text = "Booger Kid";
-                        Char3speech.text = "This is the science lab. I forget why we came here...";
+                        Char3name.text = "Hall Monitor";
+                        Char3speech.text = "Lets see if the legends are true...";
                 }
                 else if (primeInt == 3)
                 {
-                        ImageChar1e.SetActive(false);
+                        ImageChar1a.SetActive(false);
                         ImageChar2a.SetActive(true);
                         Char1name.text = "";
                         Char1speech.text = "";
@@ -211,7 +213,7 @@ public void Next(){
                 }
                 else if (primeInt == 41)
                 {
-                        ImageChar1e.SetActive(true);
+                        ImageChar1a.SetActive(true);
                  
                         ImageChar2a.SetActive(false);
                         ImageChar2b.SetActive(false);
@@ -228,17 +230,7 @@ public void Next(){
                         Choice3a.SetActive(true); // function Choice1aFunct(): Hungry
                         Choice3b.SetActive(true); // function Choice1bFunct(): Tinkle
                 }
-                else if (primeInt == 20)
-                {
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Breath Kid";
-                        Char2speech.text = "STOOOOP";
-                        Char3name.text = "";
-                        Char3speech.text = "";
-                        //gameHandler.AddPlayerStat(1);
-
-                }
+             
                 else if (primeInt == 21)
                 {
                         Char1name.text = "";
@@ -426,5 +418,8 @@ public void Next(){
         }
         public void SceneChange3(){
                 SceneManager.LoadScene("Scene8a");
+        }
+        public void SceneChangePrincipal(){
+                SceneManager.LoadScene("Scene5");
         }
 }

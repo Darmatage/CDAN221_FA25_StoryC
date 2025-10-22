@@ -9,6 +9,7 @@ public class GameHandler : MonoBehaviour{
 
 
 
+        public static bool beenToPrincipalsOffice = false;
         public static bool gotMaryJane = false;
         public static bool gotCandy = false;
         public static bool gotGoldStar = false;
