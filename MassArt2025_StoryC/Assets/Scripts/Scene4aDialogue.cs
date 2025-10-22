@@ -173,6 +173,8 @@ public void Next(){
                 }
                 else if (primeInt == 11)
                 {
+                        ImageChar2c.SetActive(false);
+                        ImageChar2a.SetActive(true);
                         Char1name.text = "YOU";
                         Char1speech.text = "What should I do...?";
                         Char2name.text = "";
@@ -284,19 +286,34 @@ public void Next(){
                         allowSpace = false;
                         NextScene3Button.SetActive(true);
                 }
+                 else if (primeInt == 101)
+                {
+                        
+                        ImageChar2c.SetActive(true);
+                        ImageChar2a.SetActive(false);
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Breath Kid";
+                        Char2speech.text = "STOP!";
+                        Char3name.text = "";
+                        Char3speech.text = "";
+                        primeInt = 10;// Turn off the "Next" button, turn on "Scene" button/s
+                        
+                }
+
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Breath Kid";
-                Char2speech.text = "STOP!!!!!!!!!!!!!!!!!!";
+                Char1name.text = "YOU";
+                Char1speech.text = "[You raise your hands over your head and prepare to smash Breath Kid's eraser fort.]";
+                Char2name.text = "";
+                Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-                primeInt = 10; // so hitting "NEXT" goes to primeInt==8!
+                primeInt = 100; // so hitting "NEXT" goes to primeInt==100!
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
@@ -319,10 +336,13 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){
+                ImageChar2c.SetActive(false);
+                ImageChar2b.SetActive(true);
+                ImageChar2a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Breath Kid";
-                Char2speech.text = "There is a shark in that aquarium!";
+                Char2speech.text = "[Points over at an aquarium on a shelf. There is a small shark swimming inside.]";
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 30; // so hitting "NEXT" goes to primeInt==31!
