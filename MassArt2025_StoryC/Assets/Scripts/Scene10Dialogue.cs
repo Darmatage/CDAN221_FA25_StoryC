@@ -27,6 +27,7 @@ public class Scene10Dialogue : MonoBehaviour {
         public GameObject ArtChar1d;
         public GameObject ArtChar1e;
         public GameObject ArtChar1f;
+        public GameObject ArtChar1g;
         //public GameObject ArtCharteacher;
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -58,6 +59,7 @@ public class Scene10Dialogue : MonoBehaviour {
              ArtChar1d.SetActive(false);
              ArtChar1e.SetActive(false);
              ArtChar1f.SetActive(false);
+             ArtChar1g.SetActive(false);
              //ArtCharteacher.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
