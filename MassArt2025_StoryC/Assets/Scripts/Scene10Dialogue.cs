@@ -222,7 +222,7 @@ public void Next(){
 
 // AFTER choice 2a
        else if (primeInt == 40){
-                if (GameHandler.gotdodgeball == true){
+                if (GameHandler.gotDodgeball == true){
                         Char1name.text = "YOU";
                         Char1speech.text = "Hah! I got this dodgeball from the gym!";
                 } 

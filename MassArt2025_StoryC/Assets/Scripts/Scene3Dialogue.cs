@@ -325,7 +325,7 @@ public void Next(){
         }
         else if (primeInt == 75){
                 ArtChar1d.SetActive(false);
-                GameHandler.gotdodgeball = true;
+                GameHandler.gotDodgeball = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Whew. That could have gone badly.";
                 Char2name.text = "";
