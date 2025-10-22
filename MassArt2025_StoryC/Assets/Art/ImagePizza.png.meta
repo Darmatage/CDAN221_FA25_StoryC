@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 86e9785c243654906aea5eeffc0c556b
+guid: 92dbdcb04d67ca54097c9d73c08cf30e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -575718490360942586
-    second: ImageJockc_0
+      213: -1466329539511734023
+    second: ImagePizza_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ImageJockc_0
+      name: ImagePizza_0
       rect:
         serializedVersion: 2
-        x: 832
-        y: 37
-        width: 381
-        height: 646
+        x: 472
+        y: 224
+        width: 326
+        height: 290
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 60079635513a208f0800000000000000
-      internalID: -575718490360942586
+      spriteID: 9f0bdb18d0d86abe0800000000000000
+      internalID: -1466329539511734023
       vertices: []
       indices: 
       edges: []
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      ImageJockc_0: -575718490360942586
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
