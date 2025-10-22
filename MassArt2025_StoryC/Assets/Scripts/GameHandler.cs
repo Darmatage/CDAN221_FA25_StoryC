@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class GameHandler : MonoBehaviour{
 
 
-
+        public static bool sharkfreed = false;
         public static bool beenToPrincipalsOffice = false;
         public static bool gotMaryJane = false;
         public static bool gotCandy = false;

@@ -291,7 +291,7 @@ public void Next(){
                         Char2name.text = "";
                         Char2speech.text = "";
                         Char3name.text = "Booger Kid";
-                        Char3speech.text = "I hungry. Im going to the cafeteria.";
+                        Char3speech.text = "I'm hungry. Im going to the cafeteria.";
                         // Turn off the "Next" button, turn on "Scene" button/s
                         nextButton.SetActive(false);
                         allowSpace = false;
@@ -375,6 +375,7 @@ public void Next(){
                 Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                GameHandler.sharkfreed = true;
         }
         public void Choice2bFunct()
         {
