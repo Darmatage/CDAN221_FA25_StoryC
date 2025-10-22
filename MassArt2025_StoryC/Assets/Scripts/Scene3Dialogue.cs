@@ -127,7 +127,7 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
-                ArtChar1a.SetActive(true);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
@@ -175,12 +175,16 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "You've done it now cretin! I'm gonna pummel you!";
         }
        else if (primeInt == 31){
+                ArtChar1d.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Agh! Not the dodge ball!";
                 Char2name.text = "";
@@ -188,6 +192,7 @@ public void Next(){
                 
         }
         else if (primeInt == 32){
+                ArtChar1b.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Owwww! My face!";
                 Char2name.text = "";
@@ -211,12 +216,16 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 51){
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "You've done it now cretin! I'm gonna pummel you!";
         }
        else if (primeInt == 52){
+                ArtChar1d.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Agh! Not the dodge ball!";
                 Char2name.text = "";
@@ -224,6 +233,7 @@ public void Next(){
                 
         }
         else if (primeInt == 53){
+                ArtChar1b.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Owwww! My face!";
                 Char2name.text = "";
@@ -236,6 +246,8 @@ public void Next(){
 
        // after choice 2b
        else if (primeInt == 60){
+                ArtChar1c.SetActive(false);
+                ArtChar1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
@@ -316,7 +328,7 @@ public void Next(){
         }
         else if (primeInt == 74){
                 ArtChar1a.SetActive(false);
-                ArtChar1d.SetActive(true);
+                ArtChar1c.SetActive(true);
 
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -324,7 +336,7 @@ public void Next(){
                 Char2speech.text = "I need to tinkle now. Hold my dodgeball.";
         }
         else if (primeInt == 75){
-                ArtChar1d.SetActive(false);
+                ArtChar1c.SetActive(false);
                 GameHandler.gotDodgeball = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Whew. That could have gone badly.";
