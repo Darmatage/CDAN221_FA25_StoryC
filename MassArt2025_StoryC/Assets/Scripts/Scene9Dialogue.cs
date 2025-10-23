@@ -78,199 +78,220 @@ public class Scene9Dialogue : MonoBehaviour {
 //Players hit [NEXT] to progress to the next primeInt:
 	public void Next(){
 		primeInt += 1;
-        if (primeInt == 1){
-                // audioSource1.Play();
-        }
+                if (primeInt == 1)
+                {
+                        // audioSource1.Play();
+                }
 
-        else if (primeInt == 2){
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "The Nurses office";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-        else if (primeInt == 3){
-                ArtChar1a.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Gross ass kid";
-                Char2speech.text = "I'm sick AHHHHHHHHHH!!!!!";
-        }
-        else if (primeInt == 4){
-                ArtChar1a.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "Oh he is sick ew";
-                Char2name.text = "";
-                Char2speech.text = "";
+                else if (primeInt == 2)
+                {
+                        DialogueDisplay.SetActive(true);
+                        Char1name.text = "YOU";
+                        Char1speech.text = "The Nurses office";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                }
+                else if (primeInt == 3)
+                {
+                        ArtChar1a.SetActive(true);
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Gross ass kid";
+                        Char2speech.text = "I'm sick AHHHHHHHHHH!!!!!";
+                }
+                else if (primeInt == 4)
+                {
+                        ArtChar1a.SetActive(true);
+                        Char1name.text = "YOU";
+                        Char1speech.text = "Oh he is sick ew";
+                        Char2name.text = "";
+                        Char2speech.text = "";
 
-                 // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
-        }
-
-
-
-
-//AFTER CHOICE 1a:
-        else if (primeInt == 10){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Gross Ass Kid";
-                Char2speech.text = "AHHH CHOOO!!!!";
-
-        }
-        else if (primeInt == 11){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Gross Ass Kid";
-                Char2speech.text = "Thank u";
-        }
-       else if (primeInt == 12){
-                Char1name.text = "Nurse";
-                Char1speech.text = "You get a gold star!";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-
-        else if (primeInt == 13){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok I am leave now.";
-                Char2name.text = "";
-                Char2speech.text = "";
-		 // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice2a.SetActive(true); // function Choice2aFunct()
-                
-        }
-
-        else if (primeInt == 14){
-                ArtPizza.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Here's your peetsa";
-                primeInt = 59;
-                //update stat: 
-                GameHandler.gotPizza = true;
-         
-
-        else if (primeInt == 15){
-                Char1name.text = "YOU";
-                Char1speech.text = "I don't have any money.";
-                //Char1speech.text = "I don't have money. I only have " + GameHandler.moneyAmt + " dollars.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-
-        else if (primeInt == 16){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Get lost.";
-                primeInt = 59;
-        }
+                        // Turn off the "Next" button, turn on "Choice" buttons
+                        nextButton.SetActive(false);
+                        allowSpace = false;
+                        Choice1a.SetActive(true); // function Choice1aFunct()
+                        Choice1b.SetActive(true); // function Choice1bFunct()
+                }
 
 
 
-// after choice 1b
-       else if (primeInt == 20){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Gross Ass Kid";
-                Char2speech.text = "AHHH CHOOO!!!!";
-        }
 
-        else if (primeInt == 21){
-                Char1name.text = "Gross Ass Kid";
-                Char1speech.text = "[SNEEZES into your hands]";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
+                //AFTER CHOICE 1a:
+                else if (primeInt == 10)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Gross Ass Kid";
+                        Char2speech.text = "AHHH CHOOO!!!!";
 
-       else if (primeInt == 22){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Gross ass kid";
-                Char2speech.text = "ew";
-        }
+                }
+                else if (primeInt == 11)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Gross Ass Kid";
+                        Char2speech.text = "Thank u";
+                }
+                else if (primeInt == 12)
+                {
+                        Char1name.text = "Nurse";
+                        Char1speech.text = "You get a gold star!";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                }
 
-       else if (primeInt == 23){
-                Char1name.text = "Nurse";
-                Char1speech.text = "ew";
-                Char2name.text = "";
-                Char2speech.text = "";
-            	// Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice2a.SetActive(true);
-                 NextScene1Button.SetActive(true); 
-        }
+                else if (primeInt == 13)
+                {
+                        Char1name.text = "YOU";
+                        Char1speech.text = "Ok I am leave now.";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                        // Turn off the "Next" button, turn on "Choice" buttons
+                        nextButton.SetActive(false);
+                        allowSpace = false;
+                        Choice2a.SetActive(true); // function Choice2aFunct()
+
+                }
+
+                else if (primeInt == 14)
+                {
+                        ArtPizza.SetActive(true);
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "Here's your peetsa";
+                        primeInt = 59;
+                        //update stat: 
+                        GameHandler.gotPizza = true;
+                }
+
+                else if (primeInt == 15)
+                {
+                        Char1name.text = "YOU";
+                        Char1speech.text = "I don't have any money.";
+                        //Char1speech.text = "I don't have money. I only have " + GameHandler.moneyAmt + " dollars.";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                }
+
+                else if (primeInt == 16)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "Get lost.";
+                        primeInt = 59;
+                }
 
 
-//AFTER choice 2a: after "I hate your nephew"
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "I like your style.";
 
-               
-        }
-       else if (primeInt == 31){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Here take this.";
-        }
+                // after choice 1b
+                else if (primeInt == 20)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Gross Ass Kid";
+                        Char2speech.text = "AHHH CHOOO!!!!";
+                }
 
-        else if (primeInt == 32){
-                Char1name.text = "YOU";
-                Char1speech.text = "Thanks, hoe.";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
+                else if (primeInt == 21)
+                {
+                        Char1name.text = "Gross Ass Kid";
+                        Char1speech.text = "[SNEEZES into your hands]";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                }
 
-       else if (primeInt == 33){
-             ArtLighter.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Here.";
-                primeInt = 59;
-                //update stat: 
-                GameHandler.gotLighter = true;
-        }
+                else if (primeInt == 22)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Gross ass kid";
+                        Char2speech.text = "ew";
+                }
 
-//AFTER choice 2b: after "Ido YOU liek sharks?
-         else if (primeInt == 40){
+                else if (primeInt == 23)
+                {
+                        Char1name.text = "Nurse";
+                        Char1speech.text = "ew";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                        // Turn off the "Next" button, turn on "Scene" button/s
+                        nextButton.SetActive(false);
+                        allowSpace = false;
+                        Choice2a.SetActive(true);
+                        NextScene1Button.SetActive(true);
+                }
 
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Lunch Lady";
-                Char2speech.text = "Get lost, kid. I don't have time for your nonsense.";
-                NextScene1Button.SetActive(true);
-                primeInt = 59;
-        }
-      
-  
-        else if (primeInt == 60){
-                ArtChar1a.SetActive(false);
-                ArtChar1b.SetActive(false);
-                ArtChar1c.SetActive(false);
-                ArtChar1d.SetActive(false);
-                Char1name.text = "YOU";
-                Char1speech.text = "back to the hallway";
-                Char2name.text = "";
-                Char2speech.text = "";
 
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true); // function Choice1aFunct()
-        }
+                //AFTER choice 2a: after "I hate your nephew"
+                else if (primeInt == 30)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "I like your style.";
+
+
+                }
+                else if (primeInt == 31)
+                {
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "Here take this.";
+                }
+
+                else if (primeInt == 32)
+                {
+                        Char1name.text = "YOU";
+                        Char1speech.text = "Thanks, hoe.";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+                }
+
+                else if (primeInt == 33)
+                {
+                        ArtLighter.SetActive(true);
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "Here.";
+                        primeInt = 59;
+                        //update stat: 
+                        GameHandler.gotLighter = true;
+                }
+
+                //AFTER choice 2b: after "Ido YOU liek sharks?
+                else if (primeInt == 40)
+                {
+
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Lunch Lady";
+                        Char2speech.text = "Get lost, kid. I don't have time for your nonsense.";
+                        NextScene1Button.SetActive(true);
+                        primeInt = 59;
+                }
+
+
+                else if (primeInt == 60)
+                {
+                        ArtChar1a.SetActive(false);
+                        ArtChar1b.SetActive(false);
+                        ArtChar1c.SetActive(false);
+                        ArtChar1d.SetActive(false);
+                        Char1name.text = "YOU";
+                        Char1speech.text = "back to the hallway";
+                        Char2name.text = "";
+                        Char2speech.text = "";
+
+                        // Turn off the "Next" button, turn on "Choice" buttons
+                        nextButton.SetActive(false);
+                        allowSpace = false;
+                        NextScene1Button.SetActive(true); // function Choice1aFunct()
+                }
 
 
       //Please do NOT delete this final bracket that ends the Next() function:
