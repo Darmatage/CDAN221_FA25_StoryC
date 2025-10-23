@@ -155,7 +155,7 @@ public class Scene9Dialogue : MonoBehaviour {
                 primeInt = 59;
                 //update stat: 
                 GameHandler.gotPizza = true;
-        }
+         
 
         else if (primeInt == 15){
                 Char1name.text = "YOU";
@@ -206,7 +206,7 @@ public class Scene9Dialogue : MonoBehaviour {
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice2a.SetActive(true);
-                NextScene1Button.SetActive(true);
+                 NextScene1Button.SetActive(true); 
         }
 
 
