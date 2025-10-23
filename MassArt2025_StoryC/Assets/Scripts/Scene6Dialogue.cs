@@ -13,7 +13,8 @@ public class Scene6Dialogue : MonoBehaviour {
         public TMP_Text Char1speech;
         public TMP_Text Char2name;    //Hall Monitor  
         public TMP_Text Char2speech;
-      
+        public TMP_Text Char3name;    //Jason the comp wiz 
+        public TMP_Text Char3speech;
         
         public GameObject DialogueDisplay;
         
@@ -23,6 +24,10 @@ public class Scene6Dialogue : MonoBehaviour {
         public GameObject ArtChar2c;
         public GameObject ArtChar2d;
         
+        public GameObject ArtChar3a; 
+        public GameObject ArtChar3b;
+
+        public GameObject ArtItem1a;
 
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -42,7 +47,12 @@ public class Scene6Dialogue : MonoBehaviour {
              ArtChar2b.SetActive(false);
              ArtChar2c.SetActive(false);
              ArtChar2d.SetActive(false);
-             
+
+             ArtChar3a.SetActive(false);
+             ArtChar3b.SetActive(false);
+
+             ArtItem1a.SetActive(false);
+
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
@@ -78,47 +88,82 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                
                 DialogueDisplay.SetActive(true);
-                ArtChar2a.SetActive(true);
+                Char1name.text = "YOU";
+                Char1speech.text = "The computer wizard is confusing all the kids again.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+        }
+        else if (primeInt == 3){
+                ArtChar3a.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Jason";
+                Char3speech.text = "Okay class, the GAMEHANDLER is the color blue. Does anyone know what it means when a game object is blue in unity?";
+
+        }
+        else if (primeInt == 4){
+                ArtChar3a.SetActive(false);
+                Char1name.text = "YOU";
+                Char1speech.text = "Everyone is just starting at their computers, most of them are playing Roblox.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+        }
+        else if (primeInt == 5){
+                
+              ArtChar2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
                 Char2speech.text = "I forget why we are here.";
-                
+                Char3name.text = "";
+                Char3speech.text = "";
         }
-       else if (primeInt == 3){
+       else if (primeInt == 6){
                 
                 Char1name.text = "YOU";
                 Char1speech.text = "Me too.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
+                Char3name.text = "";
+                Char3speech.text = "";
 
         }
-        else if (primeInt == 4){
+        else if (primeInt == 7){
                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
                 Char2speech.text = "Let's play games.";
-                
+                Char3name.text = "";
+                Char3speech.text = "";
         }
-       else if (primeInt == 5){
+       else if (primeInt == 8){
                 Char1name.text = "YOU";
                 Char1speech.text = "Ok.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                Char3name.text = "";
+                Char3speech.text = "";
         }
-        else if (primeInt == 6){
+        else if (primeInt == 9){
                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
                 Char2speech.text = "Im bored...";
+                Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -130,22 +175,68 @@ public void Next(){
          //After Choice 1a
 
         else if (primeInt == 20){
+                ArtChar2a.SetActive(false);
+                ArtChar3b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "WOOOOOO!!";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
         else if (primeInt == 21){
+                ArtItem1a.SetActive(true);
+                GameHandler.gotComputerHardDrive = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Damn, what a mess...";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
         else if (primeInt == 22){
                 Char1name.text = "YOU";
-                Char1speech.text = "I wanna leave.";
+                Char1speech.text = "(COMPUTER HARD DRIVE ADDED TO INVENTORY)";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 23){
+                ArtItem1a.SetActive(false);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Jason";
+                Char3speech.text = "...";
+        }
+        else if (primeInt == 24){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Jason";
+                Char3speech.text = "HEY!";
+        }
+        else if (primeInt == 25){
+                ArtChar3b.SetActive(false);
+                ArtChar2c.SetActive(true);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Hall Moniter";
+                Char2speech.text = "HEY!";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 26){
+                ArtChar2c.SetActive(false);
+                Char1name.text = "YOU";
+                Char1speech.text = "I need to get the flip out of here!!";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -159,12 +250,16 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Hall Moniter";
                 Char2speech.text = "Me too.";
+                Char3name.text = "";
+                Char3speech.text = "";
         }
         else if (primeInt == 31){
              Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Moniter";
                 Char2speech.text = "I wonder if it's chiken nuggies today.";
+                Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
@@ -176,6 +271,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Hall Moniter";
                 Char2speech.text = "Ok.";
+                Char3name.text = "";
+                Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
                 Choice1a.SetActive(true); 

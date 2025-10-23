@@ -21,7 +21,7 @@ public class Scene7Dialogue : MonoBehaviour {
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
         public GameObject ArtChar1c;
-        public GameObject ArtChar1d;
+       
 
         public GameObject ArtPizza;
         public GameObject ArtLighter;
@@ -45,7 +45,7 @@ public class Scene7Dialogue : MonoBehaviour {
 		ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
-		ArtChar1d.SetActive(false);
+		
 		ArtPizza.SetActive(false);
 		ArtLighter.SetActive(false);
 
@@ -265,7 +265,7 @@ public class Scene7Dialogue : MonoBehaviour {
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
-                ArtChar1d.SetActive(false);
+                
                 Char1name.text = "YOU";
                 Char1speech.text = "back to the hallway";
                 Char2name.text = "";

@@ -22,7 +22,7 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject ImageChar2a;
         public GameObject ImageChar2b;
         public GameObject ImageChar2c;
-        public GameObject ImageChar2d;
+        
 //public GameObject ArtChar2;
         public GameObject ImageBG1;
         public GameObject Choice1a;
@@ -48,7 +48,7 @@ public class Scene4aDialogue : MonoBehaviour {
              ImageChar2a.SetActive(false);
              ImageChar2b.SetActive(false);
              ImageChar2c.SetActive(false);
-             ImageChar2d.SetActive(false);
+             
              ImageBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -89,16 +89,19 @@ public void Next(){
 
                 else if (primeInt == 2)
                 {
+                        ImageChar1e.SetActive(true);
+             
                         DialogueDisplay.SetActive(true);
-                        Char1name.text = "YOU";
-                        Char1speech.text = "Phew. The Science lab. I always feel better here.";
+                        Char1name.text = "";
+                        Char1speech.text = "";
                         Char2name.text = "";
                         Char2speech.text = "";
-                        Char3name.text = "";
-                        Char3speech.text = "";
+                        Char3name.text = "Booger Kid";
+                        Char3speech.text = "This is the science lab. I forget why we came here...";
                 }
                 else if (primeInt == 3)
                 {
+                        ImageChar1e.SetActive(false);
                         ImageChar2a.SetActive(true);
                         Char1name.text = "";
                         Char1speech.text = "";
@@ -173,6 +176,8 @@ public void Next(){
                 }
                 else if (primeInt == 11)
                 {
+                        ImageChar2c.SetActive(false);
+                        ImageChar2a.SetActive(true);
                         Char1name.text = "YOU";
                         Char1speech.text = "What should I do...?";
                         Char2name.text = "";
@@ -189,6 +194,9 @@ public void Next(){
                 
                 else if (primeInt == 31)
                 {
+                        ImageChar2a.SetActive(true);
+                        ImageChar2b.SetActive(false);
+                        ImageChar2c.SetActive(false);
                         Char1name.text = "";
                         Char1speech.text = "";
                         Char2name.text = "Breath Kid";
@@ -203,6 +211,11 @@ public void Next(){
                 }
                 else if (primeInt == 41)
                 {
+                        ImageChar1e.SetActive(true);
+                 
+                        ImageChar2a.SetActive(false);
+                        ImageChar2b.SetActive(false);
+                        ImageChar2c.SetActive(false);
                         Char1name.text = "";
                         Char1speech.text = "";
                         Char2name.text = "";
@@ -257,7 +270,7 @@ public void Next(){
                 else if (primeInt == 51)
                 {
                         
-                        ImageChar2a.SetActive(true);
+                        
                         Char1name.text = "";
                         Char1speech.text = "";
                         Char2name.text = "";
@@ -272,31 +285,46 @@ public void Next(){
                 else if (primeInt == 61)
                 {
                         
-                        ImageChar2a.SetActive(true);
+                        
                         Char1name.text = "";
                         Char1speech.text = "";
                         Char2name.text = "";
                         Char2speech.text = "";
                         Char3name.text = "Booger Kid";
-                        Char3speech.text = "I also need to tinkle";
+                        Char3speech.text = "I'm hungry. Im going to the cafeteria.";
                         // Turn off the "Next" button, turn on "Scene" button/s
                         nextButton.SetActive(false);
                         allowSpace = false;
                         NextScene3Button.SetActive(true);
                 }
+                 else if (primeInt == 101)
+                {
+                        
+                        ImageChar2c.SetActive(true);
+                        ImageChar2a.SetActive(false);
+                        Char1name.text = "";
+                        Char1speech.text = "";
+                        Char2name.text = "Breath Kid";
+                        Char2speech.text = "STOP!";
+                        Char3name.text = "";
+                        Char3speech.text = "";
+                        primeInt = 10;// Turn off the "Next" button, turn on "Scene" button/s
+                        
+                }
+
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Breath Kid";
-                Char2speech.text = "STOP!!!!!!!!!!!!!!!!!!";
+                Char1name.text = "YOU";
+                Char1speech.text = "[You raise your hands over your head and prepare to smash Breath Kid's eraser fort.]";
+                Char2name.text = "";
+                Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-                primeInt = 10; // so hitting "NEXT" goes to primeInt==8!
+                primeInt = 100; // so hitting "NEXT" goes to primeInt==100!
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
@@ -319,10 +347,13 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){
+                ImageChar2c.SetActive(false);
+                ImageChar2b.SetActive(true);
+                ImageChar2a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Breath Kid";
-                Char2speech.text = "There is a shark in that aquarium!";
+                Char2speech.text = "[Points over at an aquarium on a shelf. There is a small shark swimming inside.]";
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 30; // so hitting "NEXT" goes to primeInt==31!
@@ -344,6 +375,7 @@ public void Next(){
                 Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+                GameHandler.sharkfreed = true;
         }
         public void Choice2bFunct()
         {

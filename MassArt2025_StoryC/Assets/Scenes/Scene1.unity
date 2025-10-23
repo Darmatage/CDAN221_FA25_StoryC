@@ -2008,11 +2008,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 85
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3612,6 +3612,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 4105398028878750473, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
     - {fileID: 217676467861700973, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
+    - {fileID: 5453963228809886598, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6926524651349232636, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       insertIndex: -1

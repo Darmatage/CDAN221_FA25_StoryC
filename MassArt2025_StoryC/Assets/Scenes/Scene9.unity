@@ -119,81 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &4588128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4588129}
-  - component: {fileID: 4588131}
-  - component: {fileID: 4588130}
-  m_Layer: 5
-  m_Name: ImageChar2c
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &4588129
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4588128}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1676102865}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 319.99997, y: -1.9999962}
-  m_SizeDelta: {x: 562.622, y: 814.6893}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &4588130
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4588128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 6704290005831985430, guid: 59c5f6784a5b24a479e61cb65e8cdc6f, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &4588131
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4588128}
-  m_CullTransparentMesh: 1
 --- !u!1001 &88508794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -538,7 +463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -890430335666247540, guid: 5e5f0d2cdcea540d9a5ed875a21d7927, type: 3}
+  m_Sprite: {fileID: -7268492273137692056, guid: 9b6c6b5f5580a4683b216a5def37b6d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1046,7 +971,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5006385822763173976, guid: 1d1121935f8444d42a0b06086d6750e4, type: 3}
+  m_Sprite: {fileID: 4162623750546815720, guid: cf357a788db93459e9c78ec34e10a623, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1317,11 +1242,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 85
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -291
+      value: -290
       objectReference: {fileID: 0}
     - target: {fileID: 4626528346126864407, guid: eb9e372e987e4b7449e884793077275b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1702,7 +1627,6 @@ RectTransform:
   - {fileID: 1590023477}
   - {fileID: 368518028}
   - {fileID: 779897881}
-  - {fileID: 4588129}
   - {fileID: 169510131486472237}
   - {fileID: 1575734614}
   - {fileID: 2127492029}
@@ -2561,7 +2485,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7900423381242668541, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
+    - {fileID: 5453963228809886598, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}

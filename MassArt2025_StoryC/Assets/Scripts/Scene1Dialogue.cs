@@ -289,7 +289,7 @@ public void Next(){
         ArtChar1a.SetActive(false);
         primeInt = 29;
     } else {
-        primeInt = 6;
+        primeInt = 19;
     }
         }
         public void Choice1bFunct() {

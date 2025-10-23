@@ -7,6 +7,15 @@ using UnityEngine.SceneManagement;
 
 public class GameHandler : MonoBehaviour{
 
+
+        public static bool sharkfreed = false;
+        public static bool beenToPrincipalsOffice = false;
+        public static bool gotMaryJane = false;
+        public static bool gotCandy = false;
+        public static bool gotGoldStar = false;
+        public static bool gotSnot = false;
+        public static bool gotComputerHardDrive = false;
+        public static bool gotDodgeball = false; //GameHandler.gotLighter
         public static bool gotLighter = false; //GameHandler.gotLighter
         public static bool gotPizza = false; //GameHandler.gotPizza
         public static bool gotMoney = false; //GameHandler.gotMoney

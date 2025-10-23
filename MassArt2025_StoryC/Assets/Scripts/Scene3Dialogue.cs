@@ -55,7 +55,7 @@ public class Scene3Dialogue : MonoBehaviour {
         private bool allowSpace = true;
 
 // Set initial visibility. Added images or buttons need to also be SetActive(false);
-        void Start(){  
+        void Start(){                       
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
              ArtChar1b.SetActive(false);
@@ -126,7 +126,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 3){
+       else if (primeInt ==3){
                 ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -216,16 +216,16 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 51){
-                ArtChar1d.SetActive(true);
                 ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "You've done it now cretin! I'm gonna pummel you!";
         }
        else if (primeInt == 52){
-                ArtChar1b.SetActive(true);
                 ArtChar1d.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "Agh! Not the dodge ball!";
                 Char2name.text = "";
@@ -307,7 +307,7 @@ public void Next(){
                 Char2speech.text = "I like sand sharks. I think they are cool.";
         }
         else if (primeInt == 71){
-                //gameHandler.AddPlayerStat(1);
+
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
@@ -320,7 +320,7 @@ public void Next(){
                 Char2speech.text = "You can come to the gym anytime.";
         }
         else if (primeInt == 73){
-                //gameHandler.AddPlayerStat(1);
+
                 Char1name.text = "YOU";
                 Char1speech.text = "Gee. Thanks!";
                 Char2name.text = "";
@@ -329,7 +329,7 @@ public void Next(){
         else if (primeInt == 74){
                 ArtChar1a.SetActive(false);
                 ArtChar1c.SetActive(true);
-                //gameHandler.AddPlayerStat(1);
+
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
@@ -337,14 +337,13 @@ public void Next(){
         }
         else if (primeInt == 75){
                 ArtChar1c.SetActive(false);
-                //gameHandler.AddPlayerStat(1);
+                GameHandler.gotDodgeball = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Whew. That could have gone badly.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
         else if (primeInt == 76){
-                //gameHandler.AddPlayerStat(1);
                 Char1name.text = "YOU";
                 Char1speech.text = "Hey, boogerkid. You can come out now.";
                 Char2name.text = "";
@@ -404,24 +403,27 @@ public void Next(){
                 Char2speech.text = "...";
         }
         else if (primeInt == 81){
+                
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "Whatever.";
         }
-        else if (primeInt == 82){
+       else if (primeInt == 82){
+                
+                //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "You can come to the gym anytime, I guess...";
-                primeInt=73;
+                primeInt=72;
         }
 
 //AFTER CHOICE 4:
        // after choice 4a
        else if (primeInt == 110){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -465,6 +467,7 @@ public void Next(){
         }
       // after choice 4c
        else if (primeInt == 130){
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
