@@ -34,6 +34,9 @@ public class Scene8Dialogue : MonoBehaviour {
         public GameObject ArtChar3g;
         public GameObject ArtChar3h;
 
+        public GameObject ArtItem1a;
+        public GameObject ArtItem2a;
+
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
                 public GameObject Choice1a;     
@@ -43,6 +46,8 @@ public class Scene8Dialogue : MonoBehaviour {
 
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+        public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
         
         public GameObject nextButton;
        //public AudioSource audioSource1;
@@ -70,9 +75,14 @@ public class Scene8Dialogue : MonoBehaviour {
              ArtChar3f.SetActive(false);
              ArtChar3g.SetActive(false);
              ArtChar3h.SetActive(false);
+
+             ArtItem1a.SetActive(false);
+             ArtItem2a.SetActive(false);
+
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
-             
+             NextScene3Button.SetActive(false);
+             NextScene4Button.SetActive(false);
 
              ArtBG1.SetActive(true);
              nextButton.SetActive(true);
@@ -103,7 +113,7 @@ public void Next(){
                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "(Finally... now I just have to find my favorite toilett.)";
+                Char1speech.text = "(Finally... now I just have to find my favorite toilet.)";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -144,6 +154,7 @@ public void Next(){
 
         }
           else if (primeInt == 7){
+                ArtChar2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
@@ -156,7 +167,10 @@ public void Next(){
                 Choice1c.SetActive(true); // function Choice1bFunct()
         }
         else if (primeInt == 50){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(true);
+                ArtChar2d.SetActive(false);
+                ArtChar2e.SetActive(false);
+                ArtItem1a.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -165,7 +179,7 @@ public void Next(){
                 Char3speech.text = "Aren't you the twerp that I took milk from?";
         }
         else if (primeInt == 51){
-                //gameHandler.AddPlayerStat(1);
+               
                 Char1name.text = "YOU";
                 Char1speech.text = "Give me my milk back.";
                 Char2name.text = "";
@@ -175,7 +189,9 @@ public void Next(){
         }
 
         else if (primeInt == 52){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(false);
+                ArtChar3b.SetActive(true);
+
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -185,7 +201,8 @@ public void Next(){
         }
 
         else if (primeInt == 53){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3b.SetActive(false);
+                ArtChar3e.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -194,7 +211,7 @@ public void Next(){
                 Char3speech.text = "And...";
         }
         else if (primeInt == 54){
-                //gameHandler.AddPlayerStat(1);
+              
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -203,7 +220,8 @@ public void Next(){
                 Char3speech.text = "And... I'm gonna beat you up again";
         }
         else if (primeInt == 55){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3e.SetActive(false);
+                ArtChar3g.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
@@ -212,13 +230,15 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 56){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3g.SetActive(false);
+                ArtChar3d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
                 Char2speech.text = "You're gonna give this kid his milk back..."; 
                 Char3name.text = "";
                 Char3speech.text = "";
+                NextScene3Button.SetActive(true);
                 nextButton.SetActive(false);
                 allowSpace = false;    
         }
@@ -227,7 +247,9 @@ public void Next(){
 //WIN
 
         else if (primeInt == 60){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(true);
+                ArtChar2d.SetActive(false);
+               
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -236,7 +258,7 @@ public void Next(){
                 Char3speech.text = "Aren't you the twerp that I took milk from?";
         }
         else if (primeInt == 61){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "YOU";
                 Char1speech.text = "Give me my milk back.";
                 Char2name.text = "";
@@ -246,7 +268,8 @@ public void Next(){
         }
 
         else if (primeInt == 62){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(false);
+                ArtChar3b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -256,7 +279,8 @@ public void Next(){
         }
 
         else if (primeInt == 63){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3b.SetActive(false);
+                ArtChar3e.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -265,7 +289,7 @@ public void Next(){
                 Char3speech.text = "And...";
         }
         else if (primeInt == 64){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -274,13 +298,15 @@ public void Next(){
                 Char3speech.text = "And... I'm gonna beat you up again";
         }
         else if (primeInt == 65){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3e.SetActive(false);
+                ArtChar3a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
                 Char2speech.text = "That runt kicked me in the balls! Lets get him!"; 
                 Char3name.text = "";
                 Char3speech.text = "";
+                NextScene4Button.SetActive(true);
                 nextButton.SetActive(false);
                 allowSpace = false;
         }
@@ -290,7 +316,9 @@ public void Next(){
 
 
         else if (primeInt == 70){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(true);
+                ArtChar2c.SetActive(false);
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -299,7 +327,7 @@ public void Next(){
                 Char3speech.text = "Aren't you the twerp that I took milk from?";
         }
         else if (primeInt == 71){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "YOU";
                 Char1speech.text = "Give me my milk back.";
                 Char2name.text = "";
@@ -309,7 +337,8 @@ public void Next(){
         }
 
         else if (primeInt == 72){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3a.SetActive(false);
+                ArtChar3b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -319,7 +348,8 @@ public void Next(){
         }
 
         else if (primeInt == 73){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3b.SetActive(false);
+                ArtChar3e.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -328,7 +358,7 @@ public void Next(){
                 Char3speech.text = "And...";
         }
         else if (primeInt == 74){
-                //gameHandler.AddPlayerStat(1);
+               
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -337,7 +367,8 @@ public void Next(){
                 Char3speech.text = "And... I'm gonna beat you up again";
         }
         else if (primeInt == 75){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3e.SetActive(false);
+                ArtChar3g.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
@@ -346,7 +377,8 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 76){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3g.SetActive(false);
+                ArtChar3d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
@@ -355,7 +387,7 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 77){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -364,11 +396,27 @@ public void Next(){
                 Char3speech.text = "Frick!";
         }
         else if (primeInt == 78){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar3d.SetActive(false);
+                ArtChar2d.SetActive(true);
+                ArtChar2e.SetActive(true);
+                ArtItem2a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
                 Char2speech.text = "Here little dude. I got an extra."; 
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 79){
+                ArtChar2d.SetActive(false);
+                ArtChar2e.SetActive(false);
+                ArtItem2a.SetActive(false);
+                GameHandler.gotMaryJane = true;
+
+                Char1name.text = "YOU";
+                Char1speech.text = "(MARY JANE ADDED TO INVENTORY)";
+                Char2name.text = "";
+                Char2speech.text = ""; 
                 Char3name.text = "";
                 Char3speech.text = "";
                 nextButton.SetActive(false);
@@ -381,23 +429,31 @@ public void Next(){
 //AFTER CHOICE 1:
        // after choice 1a
        else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
+                GameHandler.gotLighter = false;
+                ArtChar2a.SetActive(false);
+                ArtChar2d.SetActive(true);
+                ArtChar2e.SetActive(true);
+                ArtItem1a.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
                 Char2speech.text = "Right on dude! Just what I needed after a long day of studies!";     
                 primeInt=49;  
         }
+        //After 1b
         else if (primeInt == 30){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar2a.SetActive(false);
+                ArtChar2d.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
                 Char2speech.text = "Aww what the heck! That kills man!";
                 primeInt=59;  
         }
+        //After 1c
         else if (primeInt == 40){
-                //gameHandler.AddPlayerStat(1);
+                ArtChar2a.SetActive(false);
+                ArtChar2c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Teenager";
@@ -456,8 +512,12 @@ public void Next(){
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene10");     //Playground
         }
-
-
+        public void SceneChange3(){
+                SceneManager.LoadScene("EndWin");     //WIN
+        }
+        public void SceneChange4(){
+                SceneManager.LoadScene("EndLose");     //LOSE
+        }
 
 
 

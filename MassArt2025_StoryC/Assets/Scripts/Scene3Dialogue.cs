@@ -350,7 +350,7 @@ public void Next(){
                 Char2speech.text = "";
         }
         else if (primeInt == 77){
-                ArtChar2a.SetActive(true);
+                ArtChar2e.SetActive(true);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -360,8 +360,7 @@ public void Next(){
                 Char3speech.text = "I wasn't hiding you know.";
         }
         else if (primeInt == 78){
-                ArtChar2a.SetActive(false);
-                ArtChar2b.SetActive(true);
+                
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -371,8 +370,7 @@ public void Next(){
                 Char3speech.text = "I just don't like the smell of gym sweat too early in the morning.";
         }
         else if (primeInt == 79){
-                ArtChar2b.SetActive(false);
-                ArtChar2c.SetActive(true);
+                
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -396,6 +394,8 @@ public void Next(){
      
       // after choice 3d
        else if (primeInt == 80){
+                ArtChar1a.SetActive(false);
+                ArtChar1c.SetActive(true);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -403,19 +403,27 @@ public void Next(){
                 Char2speech.text = "...";
         }
         else if (primeInt == 81){
+                
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "Whatever.";
-                primeInt=71;
         }
-       
+       else if (primeInt == 82){
+                
+                //gameHandler.AddPlayerStat(1);
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Athletic Kid";
+                Char2speech.text = "You can come to the gym anytime, I guess...";
+                primeInt=72;
+        }
 
 //AFTER CHOICE 4:
        // after choice 4a
        else if (primeInt == 110){
-                //gameHandler.AddPlayerStat(1);
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -459,6 +467,7 @@ public void Next(){
         }
       // after choice 4c
        else if (primeInt == 130){
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -467,6 +476,8 @@ public void Next(){
                 Char3speech.text = "Can we tinkle together?";
         }
        else if (primeInt == 131){
+                ArtChar2e.SetActive(false);
+                ArtChar2f.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "No.";
                 Char2name.text = "";
