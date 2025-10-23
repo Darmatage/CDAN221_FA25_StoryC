@@ -21,18 +21,19 @@ public class Scene9Dialogue : MonoBehaviour {
         public GameObject ArtChar1a;
         public GameObject ArtChar1b;
         public GameObject ArtChar1c;
-        public GameObject ArtChar1d;
+        public GameObject ArtChar2a;
+        public GameObject ArtChar2b;
 
-        public GameObject ArtPizza;
-        public GameObject ArtLighter;
+       
+        
 
         public GameObject ArtBG1;
 
         public GameObject Choice1a;
         public GameObject Choice1b;
-        public GameObject Choice2a;
-        public GameObject Choice2b;
-        public GameObject NextScene1Button;
+        
+        public GameObject NextSceneBathroom;
+        public GameObject NextSceneCafeteria;
         //public GameObject NextScene2Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
@@ -45,16 +46,16 @@ public class Scene9Dialogue : MonoBehaviour {
 		ArtChar1a.SetActive(false);
 		ArtChar1b.SetActive(false);
 		ArtChar1c.SetActive(false);
-		ArtChar1d.SetActive(false);
-		ArtPizza.SetActive(false);
-		ArtLighter.SetActive(false);
+		ArtChar2a.SetActive(false);
+                ArtChar2b.SetActive(false);
+		
 
 		ArtBG1.SetActive(true);
 		Choice1a.SetActive(false);
 		Choice1b.SetActive(false);
-		Choice2a.SetActive(false);
-		Choice2b.SetActive(false);
-		NextScene1Button.SetActive(false);
+		
+		NextSceneBathroom.SetActive(false);
+                NextSceneCafeteria.SetActive(false);
 		//NextScene2Button.SetActive(false);
 		nextButton.SetActive(true);
 	}
@@ -78,12 +79,12 @@ public class Scene9Dialogue : MonoBehaviour {
 //Players hit [NEXT] to progress to the next primeInt:
 	public void Next(){
 		primeInt += 1;
-                if (primeInt == 1)
+                if (primeInt == 0)
                 {
                         // audioSource1.Play();
                 }
 
-                else if (primeInt == 2)
+                else if (primeInt == 1)
                 {
                         DialogueDisplay.SetActive(true);
                         Char1name.text = "YOU";
@@ -91,7 +92,7 @@ public class Scene9Dialogue : MonoBehaviour {
                         Char2name.text = "";
                         Char2speech.text = "";
                 }
-                else if (primeInt == 3)
+                else if (primeInt == 2)
                 {
                         ArtChar1a.SetActive(true);
                         Char1name.text = "";
@@ -99,7 +100,7 @@ public class Scene9Dialogue : MonoBehaviour {
                         Char2name.text = "Gross ass kid";
                         Char2speech.text = "I'm sick AHHHHHHHHHH!!!!!";
                 }
-                else if (primeInt == 4)
+                else if (primeInt == 3)
                 {
                         ArtChar1a.SetActive(true);
                         Char1name.text = "YOU";
@@ -150,40 +151,11 @@ public class Scene9Dialogue : MonoBehaviour {
                         // Turn off the "Next" button, turn on "Choice" buttons
                         nextButton.SetActive(false);
                         allowSpace = false;
-                        Choice2a.SetActive(true); // function Choice2aFunct()
+                       // function Choice2aFunct()
 
                 }
 
-                else if (primeInt == 14)
-                {
-                        ArtPizza.SetActive(true);
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "Here's your peetsa";
-                        primeInt = 59;
-                        //update stat: 
-                        GameHandler.gotPizza = true;
-                }
-
-                else if (primeInt == 15)
-                {
-                        Char1name.text = "YOU";
-                        Char1speech.text = "I don't have any money.";
-                        //Char1speech.text = "I don't have money. I only have " + GameHandler.moneyAmt + " dollars.";
-                        Char2name.text = "";
-                        Char2speech.text = "";
-                }
-
-                else if (primeInt == 16)
-                {
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "Get lost.";
-                        primeInt = 59;
-                }
-
+        
 
 
                 // after choice 1b
@@ -220,78 +192,16 @@ public class Scene9Dialogue : MonoBehaviour {
                         // Turn off the "Next" button, turn on "Scene" button/s
                         nextButton.SetActive(false);
                         allowSpace = false;
-                        Choice2a.SetActive(true);
-                        NextScene1Button.SetActive(true);
+                       
+                        
                 }
 
 
                 //AFTER choice 2a: after "I hate your nephew"
-                else if (primeInt == 30)
-                {
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "I like your style.";
+              
 
 
-                }
-                else if (primeInt == 31)
-                {
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "Here take this.";
-                }
-
-                else if (primeInt == 32)
-                {
-                        Char1name.text = "YOU";
-                        Char1speech.text = "Thanks, hoe.";
-                        Char2name.text = "";
-                        Char2speech.text = "";
-                }
-
-                else if (primeInt == 33)
-                {
-                        ArtLighter.SetActive(true);
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "Here.";
-                        primeInt = 59;
-                        //update stat: 
-                        GameHandler.gotLighter = true;
-                }
-
-                //AFTER choice 2b: after "Ido YOU liek sharks?
-                else if (primeInt == 40)
-                {
-
-                        Char1name.text = "";
-                        Char1speech.text = "";
-                        Char2name.text = "Lunch Lady";
-                        Char2speech.text = "Get lost, kid. I don't have time for your nonsense.";
-                        NextScene1Button.SetActive(true);
-                        primeInt = 59;
-                }
-
-
-                else if (primeInt == 60)
-                {
-                        ArtChar1a.SetActive(false);
-                        ArtChar1b.SetActive(false);
-                        ArtChar1c.SetActive(false);
-                        ArtChar1d.SetActive(false);
-                        Char1name.text = "YOU";
-                        Char1speech.text = "back to the hallway";
-                        Char2name.text = "";
-                        Char2speech.text = "";
-
-                        // Turn off the "Next" button, turn on "Choice" buttons
-                        nextButton.SetActive(false);
-                        allowSpace = false;
-                        NextScene1Button.SetActive(true); // function Choice1aFunct()
-                }
+                
 
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -311,17 +221,7 @@ public class Scene9Dialogue : MonoBehaviour {
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-        public void Choice1bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "I like sharks";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 19; 
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
+       
 
 //CHOICE 2:
          public void Choice2aFunct(){
@@ -329,37 +229,27 @@ public class Scene9Dialogue : MonoBehaviour {
                 Char1speech.text = "Hold out your hands";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 29; 
-                Choice2a.SetActive(false);
-                Choice2b.SetActive(false);
+                primeInt = 19; 
+                
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-        public void Choice2bFunct(){
-                Char1name.text = "YOU";
-                Char1speech.text = "What about you? Do YOU like sharks?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 39; 
-                Choice2a.SetActive(false);
-                Choice2b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
+      
 
         
 
          
 
 
-        public void SceneChange1(){
-               SceneManager.LoadScene("Scene2b");
+        public void SwitchSceneBathroom(){
+               SceneManager.LoadScene("Scene8");
         }
 
-        /*
-        public void SceneChange2(){
-                SceneManager.LoadScene("Scene2a");
+        public void SwitchSceneCafeteria(){
+               SceneManager.LoadScene("Scene7");
         }
-        */
+
+       
+       
               
 }
