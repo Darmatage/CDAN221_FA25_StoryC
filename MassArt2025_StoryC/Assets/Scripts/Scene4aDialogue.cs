@@ -419,13 +419,13 @@ public void Next(){
                 allowSpace = true;
         }
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene9a");
+               SceneManager.LoadScene("Scene9");
         }
         public void SceneChange2()
         {
                 SceneManager.LoadScene("Scene7");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("Scene8a");
+                SceneManager.LoadScene("Scene8");
         }
 }

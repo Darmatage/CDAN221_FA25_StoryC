@@ -2113,7 +2113,6 @@ GameObject:
   - component: {fileID: 1676102863}
   - component: {fileID: 1676102862}
   - component: {fileID: 1676102866}
-  - component: {fileID: 1676102867}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2259,43 +2258,6 @@ MonoBehaviour:
   NextScene2Button: {fileID: 1432789292}
   NextScene3Button: {fileID: 11022111}
   nextButton: {fileID: 307902659}
---- !u!114 &1676102867
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1676102861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3de3bf28a3a45480da3fa364659902be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
-  Char3name: {fileID: 0}
-  Char3speech: {fileID: 0}
-  DialogueDisplay: {fileID: 0}
-  ImageChar1e: {fileID: 0}
-  ImageChar1f: {fileID: 0}
-  ImageChar2a: {fileID: 0}
-  ImageChar2b: {fileID: 0}
-  ImageChar2c: {fileID: 0}
-  ImageBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  Choice1c: {fileID: 0}
-  Choice2a: {fileID: 0}
-  Choice2b: {fileID: 0}
-  Choice3a: {fileID: 0}
-  Choice3b: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
-  NextScene3Button: {fileID: 0}
-  nextButton: {fileID: 0}
 --- !u!1001 &1730188517
 PrefabInstance:
   m_ObjectHideFlags: 0
