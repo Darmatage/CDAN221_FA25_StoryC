@@ -31,6 +31,8 @@ public class Scene3Dialogue : MonoBehaviour {
         public GameObject ArtChar2e;
         public GameObject ArtChar2f;
 
+        public GameObject ArtItem1a;
+
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
                 public GameObject Choice1a;     //be my friend?
@@ -68,6 +70,8 @@ public class Scene3Dialogue : MonoBehaviour {
              ArtChar2d.SetActive(false);
              ArtChar2e.SetActive(false);
              ArtChar2f.SetActive(false);
+
+             ArtItem1a.SetActive(false);
              
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -336,20 +340,30 @@ public void Next(){
                 Char2speech.text = "I need to tinkle now. Hold my dodgeball.";
         }
         else if (primeInt == 75){
-                ArtChar1c.SetActive(false);
+                ArtItem1a.SetActive(true);
+                ArtChar1c.SetActive(false); 
+                Char1name.text = "YOU";
+                Char1speech.text = "(DODGEBALL HAS BEEN ADDED TO INVENTORY)";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 76){
+                ArtItem1a.SetActive(false);
                 GameHandler.gotDodgeball = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Whew. That could have gone badly.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 76){
+        else if (primeInt == 77){
                 Char1name.text = "YOU";
                 Char1speech.text = "Hey, boogerkid. You can come out now.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
-        else if (primeInt == 77){
+        else if (primeInt == 78){
                 ArtChar2e.SetActive(true);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
@@ -359,9 +373,8 @@ public void Next(){
                 Char3name.text = "Booger Kid";
                 Char3speech.text = "I wasn't hiding you know.";
         }
-        else if (primeInt == 78){
+        else if (primeInt == 79){
                 
-                //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -369,7 +382,7 @@ public void Next(){
                 Char3name.text = "Booger Kid";
                 Char3speech.text = "I just don't like the smell of gym sweat too early in the morning.";
         }
-        else if (primeInt == 79){
+        else if (primeInt == 80){
                 
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
@@ -393,7 +406,7 @@ public void Next(){
       // after choice 3c
      
       // after choice 3d
-       else if (primeInt == 80){
+       else if (primeInt == 90){
                 ArtChar1a.SetActive(false);
                 ArtChar1c.SetActive(true);
                 //gameHandler.AddPlayerStat(1);
@@ -402,7 +415,7 @@ public void Next(){
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "...";
         }
-        else if (primeInt == 81){
+        else if (primeInt == 91){
                 
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
@@ -410,7 +423,7 @@ public void Next(){
                 Char2name.text = "Athletic Kid";
                 Char2speech.text = "Whatever.";
         }
-       else if (primeInt == 82){
+       else if (primeInt == 92){
                 
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
@@ -604,7 +617,7 @@ public void Next(){
                 Char1speech.text = "Wale.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 69; // so hitting "NEXT" goes to primeInt==90!
+                primeInt = 69; // so hitting "NEXT" goes to primeInt==70!
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
                 Choice3c.SetActive(false);
@@ -617,7 +630,7 @@ public void Next(){
                 Char1speech.text = "I don't like sharks anymore.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 79; // so hitting "NEXT" goes to primeInt==100!
+                primeInt = 89; // so hitting "NEXT" goes to primeInt==90!
                 Choice3a.SetActive(false);
                 Choice3b.SetActive(false);
                 Choice3c.SetActive(false);
