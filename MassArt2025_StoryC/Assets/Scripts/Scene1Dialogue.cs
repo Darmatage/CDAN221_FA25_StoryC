@@ -92,24 +92,60 @@ public class Scene1Dialogue : MonoBehaviour {
 public void Next(){
         primeInt += 1;
         if (primeInt == 1){
-                // audioSource1.Play();
+                
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(false);
-                ArtChar1b.SetActive(false);
-                ArtChar1c.SetActive(false);
-                ArtChar1d.SetActive(false);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "You";
-                Char1speech.text = "This class is so boring... Miss Smith is talking about that divorce thing again";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                Char4name.text = "";
-                Char4speech.text = "";
-                }
-        else if (primeInt == 3){
+        DialogueDisplay.SetActive(true);
+        ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+
+        Char1name.text = "You";
+        Char1speech.text = "Ugh, another day in Miss Smiths class...";
+        Char2name.text = "";
+        Char2speech.text = "";
+        Char3name.text = "";
+        Char3speech.text = "";
+        Char4name.text = "";
+        Char4speech.text = "";
+}
+else if (primeInt == 3){
+        Char1name.text = "You";
+        Char1speech.text = "Feels like time moves slower in here than anywhere else.";
+        Char2name.text = "";
+        Char2speech.text = "";
+        Char3name.text = "";
+        Char3speech.text = "";
+        Char4name.text = "";
+        Char4speech.text = "";
+}
+else if (primeInt == 4){
+        Char1name.text = "You";
+        Char1speech.text = "I should at least pretend to pay attention this time.";
+        Char2name.text = "";
+        Char2speech.text = "";
+        Char3name.text = "";
+        Char3speech.text = "";
+        Char4name.text = "";
+        Char4speech.text = "";
+}
+else if (primeInt == 5){
+        ArtChar1a.SetActive(false);
+        ArtChar1b.SetActive(false);
+        ArtChar1c.SetActive(false);
+        ArtChar1d.SetActive(false);
+        DialogueDisplay.SetActive(true);
+        Char1name.text = "You";
+        Char1speech.text = "This class is so boring... Miss Smith is talking about that divorce thing again";
+        Char2name.text = "";
+        Char2speech.text = "";
+        Char3name.text = "";
+        Char3speech.text = "";
+        Char4name.text = "";
+        Char4speech.text = "";
+}
+        else if (primeInt == 6){
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
@@ -125,7 +161,7 @@ public void Next(){
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-        else if (primeInt == 4){
+        else if (primeInt == 7){
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
@@ -141,7 +177,7 @@ public void Next(){
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-        else if (primeInt == 5){
+        else if (primeInt == 8){
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
@@ -156,7 +192,7 @@ public void Next(){
                 Char4name.text = "";
                 Char4speech.text = "";
         }
-       else if (primeInt ==6){
+       else if (primeInt ==9){
                 Char1name.text = "YOU";
                 Char1speech.text = "Bro I dont even know you";
                 Char2name.text = "";
@@ -164,7 +200,7 @@ public void Next(){
                 //gameHandler.AddPlayerStat(1);
 
         }
-       else if (primeInt == 7){
+       else if (primeInt == 10){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Weird Kid";
@@ -200,7 +236,7 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Weird Kid";
                 Char2speech.text = "Well I dont.";
-                primeInt = 6; // so hitting "NEXT" goes to primeInt==20!
+                primeInt = 9; // so hitting "NEXT" goes to primeInt==20!
         }
 
            // after choice 1c
@@ -312,7 +348,7 @@ public void Next(){
         ArtChar1a.SetActive(false);
         primeInt = 29;
     } else {
-        primeInt = 6;
+        primeInt = 9;
     }
 }
             public void Choice1cFunct(){
@@ -369,7 +405,7 @@ public void Next(){
                 ArtChar1d.SetActive(false);
                 Char2name.text = "";
                 Char2speech.text = "";
-                primeInt = 6; 
+                primeInt = 9; 
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
                 Choice2c.SetActive(false);
