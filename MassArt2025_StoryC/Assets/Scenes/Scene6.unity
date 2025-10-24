@@ -1220,7 +1220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 409, y: -52}
+  m_AnchoredPosition: {x: 362, y: -20}
   m_SizeDelta: {x: 491.5917, y: 711.83}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1396317731
@@ -1368,19 +1368,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1541854109351662276, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.0017885711
+      value: 0.2901961
       objectReference: {fileID: 0}
     - target: {fileID: 1541854109351662276, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.6415094
+      value: 0.6313726
       objectReference: {fileID: 0}
     - target: {fileID: 1541854109351662276, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor.r
-      value: 0
+      value: 0.14117648
       objectReference: {fileID: 0}
     - target: {fileID: 1541854109351662276, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278232064
+      value: 4283080996
       objectReference: {fileID: 0}
     - target: {fileID: 1633695765266322214, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_Sprite
@@ -1388,15 +1388,19 @@ PrefabInstance:
       objectReference: {fileID: -6663181299408003337, guid: 6807f06c7d469914db07f3ac98f68126, type: 3}
     - target: {fileID: 1956512758837338945, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor.b
-      value: 0.007843138
+      value: 0.2901961
       objectReference: {fileID: 0}
     - target: {fileID: 1956512758837338945, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor.g
-      value: 0.6431373
+      value: 0.6313726
+      objectReference: {fileID: 0}
+    - target: {fileID: 1956512758837338945, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.14117648
       objectReference: {fileID: 0}
     - target: {fileID: 1956512758837338945, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_fontColor32.rgba
-      value: 4278363136
+      value: 4283080996
       objectReference: {fileID: 0}
     - target: {fileID: 3818933892773505035, guid: 82cad8ecb535bf14cb7673dda08dd55f, type: 3}
       propertyPath: m_text

@@ -408,9 +408,7 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 79){
-                ArtChar2d.SetActive(false);
-                ArtChar2e.SetActive(false);
-                ArtItem2a.SetActive(false);
+                
                 GameHandler.gotMaryJane = true;
 
                 Char1name.text = "YOU";
