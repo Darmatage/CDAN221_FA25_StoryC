@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7415252173784240985
 RectTransform:
   m_ObjectHideFlags: 0
@@ -352,7 +352,7 @@ RectTransform:
   m_Father: {fileID: 5275269911077533545}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -426,8 +426,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7234411490314287055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 40, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1247,9 +1247,53 @@ PrefabInstance:
       propertyPath: m_Name
       value: ButtonQuit
       objectReference: {fileID: 0}
+    - target: {fileID: 4630565495678846623, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4630565495678846623, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2279589755801837552, guid: 311a15d386df0bd45a042170a9bd7837, type: 3}
     - target: {fileID: 4686068802714939687, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
       propertyPath: m_text
-      value: QUIT
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_NormalColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_NormalColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_NormalColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_PressedColor.b
+      value: 0.764151
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_PressedColor.g
+      value: 0.40039915
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_PressedColor.r
+      value: 0.082903184
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.70433205
+      objectReference: {fileID: 0}
+    - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.3496351
       objectReference: {fileID: 0}
     - target: {fileID: 5907117285359887899, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -1293,11 +1337,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7887834612300828249, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 350
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 7887834612300828249, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 80
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7887834612300828249, guid: bbcb3d933b4e44c4ea76a6384c7995bc, type: 3}
       propertyPath: m_LocalPosition.x
