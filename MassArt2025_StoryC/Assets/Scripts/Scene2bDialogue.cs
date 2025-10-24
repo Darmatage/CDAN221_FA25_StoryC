@@ -681,12 +681,12 @@ public void Next(){
                 
         }
         public void SceneCLabFunct(){
-               SceneManager.LoadScene("Scene2a");
+               SceneManager.LoadScene("Scene6");
         }
         public void SceneLabFunct(){
                 SceneManager.LoadScene("Scene4b");
         }
-         public void ScenePrincipalFunct(){
+        public void ScenePrincipalFunct(){
                 SceneManager.LoadScene("Scene5");
         }
 
