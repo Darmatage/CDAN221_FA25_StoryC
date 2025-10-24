@@ -110,7 +110,7 @@ public void Next(){
         else if (primeInt == 4){
                 ArtChar3a.SetActive(false);
                 Char1name.text = "YOU";
-                Char1speech.text = "Everyone is just starting at their computers, most of them are playing Roblox.";
+                Char1speech.text = "Everyone is just staring at their computers, most of them are playing Roblox.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -185,7 +185,7 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 21){
-                ArtItem1a.SetActive(true);
+                
                 GameHandler.gotComputerHardDrive = true;
                 Char1name.text = "YOU";
                 Char1speech.text = "Damn, what a mess...";
@@ -195,6 +195,7 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt == 22){
+                ArtItem1a.SetActive(true);
                 Char1name.text = "YOU";
                 Char1speech.text = "(COMPUTER HARD DRIVE ADDED TO INVENTORY)";
                 Char2name.text = "";
