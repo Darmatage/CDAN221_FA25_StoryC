@@ -27,8 +27,13 @@ public class PaddleMove : MonoBehaviour {
 		rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
 
 		if (!hasTouched)
-		{
-			if (Input.GetAxisRaw("Horizontal") != null)
+		{	
+			if ((Input.GetKeyDown("a")) ||
+				(Input.GetKeyDown("d")) || 
+				(Input.GetKeyDown("left")) ||
+				(Input.GetKeyDown("right"))
+			)
+			//if (Input.GetAxisRaw("Horizontal") != null)
 			{
 				instruct.SetActive(false);
 				hasTouched = true;

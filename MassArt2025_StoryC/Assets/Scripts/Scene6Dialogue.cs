@@ -74,7 +74,14 @@ public class Scene6Dialogue : MonoBehaviour {
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "Hall Monitor";
-			Char2speech.text = "Nice job, you got a " + GameHandler.catchGameScore;
+			if (GameHandler.catchGameScore >= 1)
+			{
+				Char2speech.text = "Nice job, you got a score of " + GameHandler.catchGameScore + " !";
+			}
+			else
+			{
+				Char2speech.text = "Um..., you got a " + GameHandler.catchGameScore;
+			} 
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
@@ -185,7 +192,7 @@ public void Next(){
 		}
 
 
-//coming back from catch a bully game: 
+		//coming back from catch a bully game: 
 		else if (primeInt == 9)
 		{
 
@@ -209,7 +216,7 @@ public void Next(){
 		else if (primeInt == 20)
 		{
 			ArtChar2a.SetActive(false);
-			ArtChar3b.SetActive(true);
+
 			Char1name.text = "YOU";
 			Char1speech.text = "WOOOOOO!!";
 			Char2name.text = "";
@@ -219,8 +226,7 @@ public void Next(){
 		}
 		else if (primeInt == 21)
 		{
-
-			GameHandler.gotComputerHardDrive = true;
+			
 			Char1name.text = "YOU";
 			Char1speech.text = "Damn, what a mess...";
 			Char2name.text = "";
@@ -230,6 +236,37 @@ public void Next(){
 		}
 		else if (primeInt == 22)
 		{
+			ArtItem1a.SetActive(false);
+			ArtChar3b.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Jason";
+			Char3speech.text = "...";
+		}
+		else if (primeInt == 23)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Jason";
+			Char3speech.text = "... why...";
+		}
+		else if (primeInt == 24)
+		{
+			ArtChar3b.SetActive(false);
+			Char1name.text = "YOU";
+			Char1speech.text = "Hey, what's this?";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 25)
+		{	
+			GameHandler.gotComputerHardDrive = true;
 			ArtItem1a.SetActive(true);
 			Char1name.text = "YOU";
 			Char1speech.text = "(COMPUTER HARD DRIVE ADDED TO INVENTORY)";
@@ -238,18 +275,10 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 23)
+		else if (primeInt == 26)
 		{
 			ArtItem1a.SetActive(false);
-			Char1name.text = "";
-			Char1speech.text = "";
-			Char2name.text = "";
-			Char2speech.text = "";
-			Char3name.text = "Jason";
-			Char3speech.text = "...";
-		}
-		else if (primeInt == 24)
-		{
+			ArtChar3b.SetActive(true);
 			Char1name.text = "";
 			Char1speech.text = "";
 			Char2name.text = "";
@@ -257,7 +286,7 @@ public void Next(){
 			Char3name.text = "Jason";
 			Char3speech.text = "HEY!";
 		}
-		else if (primeInt == 25)
+		else if (primeInt == 27)
 		{
 			ArtChar3b.SetActive(false);
 			ArtChar2c.SetActive(true);
@@ -268,7 +297,7 @@ public void Next(){
 			Char3name.text = "";
 			Char3speech.text = "";
 		}
-		else if (primeInt == 26)
+		else if (primeInt == 28)
 		{
 			ArtChar2c.SetActive(false);
 			Char1name.text = "YOU";
