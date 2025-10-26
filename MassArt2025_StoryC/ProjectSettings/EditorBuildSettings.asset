@@ -42,6 +42,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene6.unity
     guid: 85dc7efcf373c7944ab9c6fda4764320
   - enabled: 1
+    path: Assets/Scenes/CatchGame.unity
+    guid: 0a877ed48db580f488de47742ce1a7f7
+  - enabled: 1
     path: Assets/Scenes/Scene7.unity
     guid: f171d90e56eb74b3aa035ef8e14644ca
   - enabled: 1

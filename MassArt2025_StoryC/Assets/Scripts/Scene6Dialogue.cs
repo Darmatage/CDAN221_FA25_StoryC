@@ -35,7 +35,8 @@ public class Scene6Dialogue : MonoBehaviour {
                 public GameObject Choice1b;     
                 public GameObject Choice1c;
      public GameObject NextScene1Button;
-     public GameObject NextScene2Button;
+	public GameObject NextScene2Button;
+	 public GameObject NextScene3Button;
      public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -59,10 +60,25 @@ public class Scene6Dialogue : MonoBehaviour {
 
 
              NextScene1Button.SetActive(false);
-             NextScene2Button.SetActive(false);
+		NextScene2Button.SetActive(false);
+			 NextScene3Button.SetActive(false);
 
              ArtBG1.SetActive(true);
-             nextButton.SetActive(true);
+		nextButton.SetActive(true);
+
+		if (GameHandler.playedCatchGame == true)
+		{
+			primeInt = 8;
+			ArtChar2a.SetActive(true);
+			DialogueDisplay.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Monitor";
+			Char2speech.text = "Nice job, you got a " + GameHandler.catchGameScore;
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+
         }
 
 // Use the spacebar as a faster "Next" button:
@@ -84,201 +100,228 @@ public class Scene6Dialogue : MonoBehaviour {
 //Players hit [NEXT] to progress to the next primeInt:
 public void Next(){
         primeInt += 1;
-        if (primeInt == 1){
-                // audioSource1.Play();
-        }
-        else if (primeInt == 2){
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "The computer wizard is confusing all the kids again.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+		if (primeInt == 1)
+		{
+			// audioSource1.Play();
+		}
+		else if (primeInt == 2)
+		{
+			DialogueDisplay.SetActive(true);
+			Char1name.text = "YOU";
+			Char1speech.text = "The computer wizard is confusing all the kids again.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
 
-        }
-        else if (primeInt == 3){
-                ArtChar3a.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Jason";
-                Char3speech.text = "Okay class, the GAMEHANDLER is the color blue. Does anyone know what it means when a game object is blue in unity?";
+		}
+		else if (primeInt == 3)
+		{
+			ArtChar3a.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Jason";
+			Char3speech.text = "Okay class, the GAMEHANDLER is the color blue. Does anyone know what it means when a game object is blue in unity?";
 
-        }
-        else if (primeInt == 4){
-                ArtChar3a.SetActive(false);
-                Char1name.text = "YOU";
-                Char1speech.text = "Everyone is just staring at their computers, most of them are playing Roblox.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+		}
+		else if (primeInt == 4)
+		{
+			ArtChar3a.SetActive(false);
+			Char1name.text = "YOU";
+			Char1speech.text = "Everyone is just staring at their computers, most of them are playing Roblox.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
 
-        }
-        else if (primeInt == 5){
-                
-              ArtChar2a.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Monitor";
-                Char2speech.text = "I forget why we are here.";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 6){
-                
-                Char1name.text = "YOU";
-                Char1speech.text = "Me too.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+		}
+		else if (primeInt == 5)
+		{
 
-        }
-        else if (primeInt == 7){
-               
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Monitor";
-                Char2speech.text = "Let's play games.";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ok.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 9){
-               
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Monitor";
-                Char2speech.text = "Im bored...";
-                Char3name.text = "";
-                Char3speech.text = "";
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
-                Choice1c.SetActive(true); // function Choice1bFunct()
-        }
-    //AFTER CHOICE 1
-         //After Choice 1a
+			ArtChar2a.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Monitor";
+			Char2speech.text = "I forget why we are here.";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 6)
+		{
 
-        else if (primeInt == 20){
-                ArtChar2a.SetActive(false);
-                ArtChar3b.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "WOOOOOO!!";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 21){
-                
-                GameHandler.gotComputerHardDrive = true;
-                Char1name.text = "YOU";
-                Char1speech.text = "Damn, what a mess...";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 22){
-                ArtItem1a.SetActive(true);
-                Char1name.text = "YOU";
-                Char1speech.text = "(COMPUTER HARD DRIVE ADDED TO INVENTORY)";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 23){
-                ArtItem1a.SetActive(false);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Jason";
-                Char3speech.text = "...";
-        }
-        else if (primeInt == 24){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Jason";
-                Char3speech.text = "HEY!";
-        }
-        else if (primeInt == 25){
-                ArtChar3b.SetActive(false);
-                ArtChar2c.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Moniter";
-                Char2speech.text = "HEY!";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 26){
-                ArtChar2c.SetActive(false);
-                Char1name.text = "YOU";
-                Char1speech.text = "I need to get the flip out of here!!";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
+			Char1name.text = "YOU";
+			Char1speech.text = "Me too.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
 
-        }
-        //After choice 1b
+		}
+		else if (primeInt == 7)
+		{
 
-        else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Moniter";
-                Char2speech.text = "Me too.";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 31){
-             Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Moniter";
-                Char2speech.text = "I wonder if it's chiken nuggies today.";
-                Char3name.text = "";
-                Char3speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-        }
-        //After choice 1c
+			DialogueDisplay.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Monitor";
+			Char2speech.text = "Let's play games.";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 8)
+		{
+			Char1name.text = "YOU";
+			Char1speech.text = "Ok.";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+			// Turn off the "Next" button, turn on "Scene Selection" buttons
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene3Button.SetActive(true);
+		}
 
-        else if (primeInt == 40){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Hall Moniter";
-                Char2speech.text = "Ok.";
-                Char3name.text = "";
-                Char3speech.text = "";
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); 
-                Choice1b.SetActive(true);
-        }
+
+//coming back from catch a bully game: 
+		else if (primeInt == 9)
+		{
+
+			DialogueDisplay.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Monitor";
+			Char2speech.text = "Im bored...";
+			Char3name.text = "";
+			Char3speech.text = "";
+			// Turn off the "Next" button, turn on "Choice" buttons
+			nextButton.SetActive(false);
+			allowSpace = false;
+			Choice1a.SetActive(true); // function Choice1aFunct()
+			Choice1b.SetActive(true); // function Choice1bFunct()
+			Choice1c.SetActive(true); // function Choice1bFunct()
+		}
+		//AFTER CHOICE 1
+		//After Choice 1a
+
+		else if (primeInt == 20)
+		{
+			ArtChar2a.SetActive(false);
+			ArtChar3b.SetActive(true);
+			Char1name.text = "YOU";
+			Char1speech.text = "WOOOOOO!!";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 21)
+		{
+
+			GameHandler.gotComputerHardDrive = true;
+			Char1name.text = "YOU";
+			Char1speech.text = "Damn, what a mess...";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 22)
+		{
+			ArtItem1a.SetActive(true);
+			Char1name.text = "YOU";
+			Char1speech.text = "(COMPUTER HARD DRIVE ADDED TO INVENTORY)";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 23)
+		{
+			ArtItem1a.SetActive(false);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Jason";
+			Char3speech.text = "...";
+		}
+		else if (primeInt == 24)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "Jason";
+			Char3speech.text = "HEY!";
+		}
+		else if (primeInt == 25)
+		{
+			ArtChar3b.SetActive(false);
+			ArtChar2c.SetActive(true);
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Moniter";
+			Char2speech.text = "HEY!";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 26)
+		{
+			ArtChar2c.SetActive(false);
+			Char1name.text = "YOU";
+			Char1speech.text = "I need to get the flip out of here!!";
+			Char2name.text = "";
+			Char2speech.text = "";
+			Char3name.text = "";
+			Char3speech.text = "";
+			// Turn off the "Next" button, turn on "Scene Selection" buttons
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+			NextScene2Button.SetActive(true);
+
+		}
+		//After choice 1b
+
+		else if (primeInt == 30)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Moniter";
+			Char2speech.text = "Me too.";
+			Char3name.text = "";
+			Char3speech.text = "";
+		}
+		else if (primeInt == 31)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Moniter";
+			Char2speech.text = "I wonder if it's chiken nuggies today.";
+			Char3name.text = "";
+			Char3speech.text = "";
+			nextButton.SetActive(false);
+			allowSpace = false;
+			NextScene1Button.SetActive(true);
+		}
+		//After choice 1c
+
+		else if (primeInt == 40)
+		{
+			Char1name.text = "";
+			Char1speech.text = "";
+			Char2name.text = "Hall Moniter";
+			Char2speech.text = "Ok.";
+			Char3name.text = "";
+			Char3speech.text = "";
+			nextButton.SetActive(false);
+			allowSpace = false;
+			Choice1a.SetActive(true);
+			Choice1b.SetActive(true);
+		}
 
 
 
@@ -338,6 +381,9 @@ public void SceneChange2(){
                 SceneManager.LoadScene("Scene8");     //Bathroom
         }
 
+public void SceneChange3(){
+                SceneManager.LoadScene("CatchGame");     //Play CatchGame
+        }
 
 
 
