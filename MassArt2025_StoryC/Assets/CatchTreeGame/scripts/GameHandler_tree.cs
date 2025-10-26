@@ -27,7 +27,7 @@ public class GameHandler_tree : MonoBehaviour {
                   scoreTextB.text = "FINAL SCORE: " + playerScore;
             }
             else {
-                  scoreTextB.text = "" + playerScore;
+                  scoreTextB.text = "SCORE: " + playerScore;
             }
 
             

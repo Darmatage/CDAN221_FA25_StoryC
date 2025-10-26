@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 5524178733346657945}
   - component: {fileID: 435127889289695597}
   m_Layer: 0
-  m_Name: bianchino_tree_0
+  m_Name: art_badObjet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,8 +149,8 @@ Transform:
   m_GameObject: {fileID: 6485031977636257392}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7988674695801069647}
@@ -199,8 +199,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 96
-  m_Sprite: {fileID: -4837771880713745735, guid: 2a0c8bfbe00cb4534b930811711692d7, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.11783886, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 34dad4b1c0a4dc94792a0b348109d524, type: 3}
+  m_Color: {r: 0.81886786, g: 0.52376646, b: 0.52376646, a: 0.9490196}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

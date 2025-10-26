@@ -83,6 +83,6 @@ public class TreeSpawner : MonoBehaviour {
 
     public void UpdateTime() {
         Text timeTextB = timeText.GetComponent<Text>();
-        timeTextB.text = "" + gameTime;
+        timeTextB.text = "TIME: " + gameTime;
     }
 }

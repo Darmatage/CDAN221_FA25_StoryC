@@ -8,18 +8,32 @@ public class PaddleMove : MonoBehaviour {
      public float moveSpeed = 5f;
      public Vector2 movement;
      public GameHandler_tree gameHandlerObj;
-     public GameObject hitVFX;
+	public GameObject hitVFX;
+
+	public GameObject instruct;
+	private bool hasTouched = false;
 
      void Start(){
           rb = GetComponent<Rigidbody2D> ();
-          if (GameObject.FindWithTag("GameHandler_tree") != null){
-               gameHandlerObj = GameObject.FindWithTag("GameHandler_tree").GetComponent<GameHandler_tree>();
-          }
+		if (GameObject.FindWithTag("GameHandler_tree") != null)
+		{
+			gameHandlerObj = GameObject.FindWithTag("GameHandler_tree").GetComponent<GameHandler_tree>();
+		}
+		instruct.SetActive(true);
      }
 
      void FixedUpdate(){
           movement.x = Input.GetAxisRaw ("Horizontal");
-          rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+		rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+
+		if (!hasTouched)
+		{
+			if (Input.GetAxisRaw("Horizontal") != null)
+			{
+				instruct.SetActive(false);
+				hasTouched = true;
+			}
+		}
      }
 
      void OnCollisionEnter2D(Collision2D other){
