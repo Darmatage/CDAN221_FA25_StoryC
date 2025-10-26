@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 05040e7bbae623d48891709f476e5301
+guid: 23c9e2f569b0b1c4c8e246fc896f25a2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3235991084466404386
-    second: Button_KREDITS_0
+      213: 7456393597600259330
+    second: ImageDodgeball_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Button_KREDITS_0
+      name: ImageDodgeball_0
       rect:
         serializedVersion: 2
-        x: 420
-        y: 242
-        width: 1080
-        height: 701
+        x: 470
+        y: 210
+        width: 343
+        height: 318
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ed38c02f0437713d0800000000000000
-      internalID: -3235991084466404386
+      spriteID: 20dd57aa87e6a7760800000000000000
+      internalID: 7456393597600259330
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Button_KREDITS_0: -3235991084466404386
+      ImageDodgeball_0: 7456393597600259330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
