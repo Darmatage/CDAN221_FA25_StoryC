@@ -2,11 +2,12 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class GameHandler_tree : MonoBehaviour {
 
-      public GameObject scoreText;
+      public TMP_Text scoreText;
       public static int playerScore = 0;
 
       void Start(){
@@ -22,12 +23,12 @@ public class GameHandler_tree : MonoBehaviour {
       }
 
       void UpdateScore(){
-            Text scoreTextB = scoreText.GetComponent<Text>();
+            
             if (SceneManager.GetActiveScene().name == "EndScene") {
-                  scoreTextB.text = "FINAL SCORE: " + playerScore;
+                  scoreText.text = "FINAL SCORE: " + playerScore;
             }
             else {
-                  scoreTextB.text = "SCORE: " + playerScore;
+                  scoreText.text = "SCORE: " + playerScore;
             }
 
             

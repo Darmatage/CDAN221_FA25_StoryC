@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 using UnityEngine.SceneManagement;
 
 public class TreeSpawner : MonoBehaviour {
@@ -12,7 +13,7 @@ public class TreeSpawner : MonoBehaviour {
     public Transform[] spawnPoints;
     private int rangeEnd;
     private Transform spawnPoint;
-    public GameObject timeText;
+    public TMP_Text timeText;
     public GameObject gameOverText;
 
     // Timing variables
@@ -82,7 +83,6 @@ public class TreeSpawner : MonoBehaviour {
     }
 
     public void UpdateTime() {
-        Text timeTextB = timeText.GetComponent<Text>();
-        timeTextB.text = "TIME: " + gameTime;
+        timeText.text = "TIME: " + gameTime;
     }
 }
