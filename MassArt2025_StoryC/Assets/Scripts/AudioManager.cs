@@ -18,7 +18,7 @@ public class AudioManager : MonoBehaviour {
 
         void Awake(){
                 //set the music based on the scene
-                if ((SceneManager.GetActiveScene().name == "MainMenu"))
+                if ((SceneManager.GetActiveScene().name == "MainMenu")||(SceneManager.GetActiveScene().name == "Credits"))
                 { theMusic = MenuMusic; }
                 else if (SceneManager.GetActiveScene().name == "EndLose")
                 { theMusic = EndLose; }
