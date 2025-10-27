@@ -82,7 +82,8 @@ public class TreeSpawner : MonoBehaviour {
         }
     }
 
-    public void UpdateTime() {
-        timeText.text = "TIME: " + gameTime;
+	public void UpdateTime()
+	{
+		timeText.text = "TIME: " + gameTime;
     }
 }
