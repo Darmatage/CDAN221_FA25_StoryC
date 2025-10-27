@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ab273843451d14cc9beacc994e523813
+guid: 77d91154d1c054c1095516ab9aaf04e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2179636146548271796
-    second: bg_playground_0
+      213: 6508602162377853085
+    second: bg_gym 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_playground_0
+      name: bg_gym 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2150
-        height: 1210
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c459361197060c1e0800000000000000
-      internalID: -2179636146548271796
+      spriteID: d980fd0ce23335a50800000000000000
+      internalID: 6508602162377853085
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bg_playground_0: -2179636146548271796
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

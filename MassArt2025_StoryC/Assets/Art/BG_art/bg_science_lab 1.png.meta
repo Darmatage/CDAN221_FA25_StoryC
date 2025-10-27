@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a8372b54746214cd1b38be7aa9edeadb
+guid: 4a1fcc1108326491686bc77ee78843be
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8535176193136803178
-    second: bg_hallway_0
+      213: 3134270280196675472
+    second: bg_science_lab 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_hallway_0
+      name: bg_science_lab 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1746
-        height: 982
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a6d3a4fb689037670800000000000000
-      internalID: 8535176193136803178
+      spriteID: 097df29b63a2f7b20800000000000000
+      internalID: 3134270280196675472
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bg_hallway_0: 8535176193136803178
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

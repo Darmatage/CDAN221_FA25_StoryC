@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 6d4f8126ca1ed4265a9b33943c388fc7
+guid: cdfc0608e704144c888ed95c214f65f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1851226315671141383
-    second: bg_classroom_0
+      213: -3685410499972285830
+    second: bg_computer_lab 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_classroom_0
+      name: bg_computer_lab 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1828
-        height: 1028
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70cfe60a680e0b910800000000000000
-      internalID: 1851226315671141383
+      spriteID: a7a38a92daacadcc0800000000000000
+      internalID: -3685410499972285830
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bg_classroom_0: 1851226315671141383
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

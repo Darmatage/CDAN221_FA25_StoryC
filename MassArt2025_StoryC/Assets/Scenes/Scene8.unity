@@ -762,6 +762,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 586158574}
     m_Modifications:
+    - target: {fileID: 4396654703697836, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396654703697836, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 767863440521110420, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -845,6 +853,18 @@ PrefabInstance:
     - target: {fileID: 3666980562473395398, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
       propertyPath: m_Name
       value: PAUSEMENUHANDLER
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2975,7 +2995,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2225298981445554259, guid: 12beb583a5ace4bdc9cd2f84a571a3a8, type: 3}
+  m_Sprite: {fileID: 100615522131023696, guid: a7c72ba0ac7414fbfb30d2721305f367, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 413af87086f414220bfa676683d1d3df
+guid: a7c72ba0ac7414fbfb30d2721305f367
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7718867345310532489
-    second: bg_science_lab_0
+      213: 100615522131023696
+    second: bg_bathroom 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_science_lab_0
+      name: bg_bathroom 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2565
-        height: 1443
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 77c3766bb0311e490800000000000000
-      internalID: -7718867345310532489
+      spriteID: 0579287c845756100800000000000000
+      internalID: 100615522131023696
       vertices: []
       indices: 
       edges: []
@@ -147,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      bg_science_lab_0: -7718867345310532489
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
