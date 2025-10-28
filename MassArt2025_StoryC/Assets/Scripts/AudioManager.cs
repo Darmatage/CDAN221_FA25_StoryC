@@ -6,11 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
-	public AudioSource MenuMusic;
-	public AudioSource GameMusic1;
-	public AudioSource EndWin;
-	public AudioSource EndLose;
-	public AudioSource EndFight;
+        public AudioSource MenuMusic;
+        public AudioSource GameMusic1;
+        public AudioSource EndWin;
+        public AudioSource EndLose;
+        public AudioSource EndFight;
+        public AudioSource CatchGame;
 
 	private AudioSource theMusic;
 	private static float musicTimeStamp = 0.0f;
@@ -22,7 +23,7 @@ public class AudioManager : MonoBehaviour {
 		if ((thisScene == "MainMenu") || (thisScene == "Credits"))
 		{
 			theMusic = MenuMusic; //39 seconds long
-								  
+
 			//check for music clip length problems, to prevent error: "invaid seek position"
 			if (musicTimeStamp < theMusic.clip.length)
 			{
@@ -37,16 +38,19 @@ public class AudioManager : MonoBehaviour {
 		else if (thisScene == "EndWin")
 		{
 			theMusic = EndWin; //49 seconds long
-
 		}
 		else if (thisScene == "Scene10")
 		{
 			theMusic = EndFight; //46 sconds long
 		}
+		else if (SceneManager.GetActiveScene().name == "CatchGame")
+		{
+			theMusic = CatchGame; 
+		}
 		else
 		{
 			theMusic = GameMusic1; // 33 seconds long
-			//check for music clip length problems, to prevent error: "invaid seek position"
+								   //check for music clip length problems, to prevent error: "invaid seek position"
 			if (musicTimeStamp < theMusic.clip.length)
 			{
 				//make the music continuous: set the time for game scenes:
