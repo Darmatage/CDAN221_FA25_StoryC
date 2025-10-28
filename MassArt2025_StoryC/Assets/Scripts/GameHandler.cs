@@ -26,6 +26,11 @@ public class GameHandler : MonoBehaviour{
         // void Start () { UpdateScore (); }
 
         void Update(){
+			//secret od to test ctch gme functionlity quickly in itch:
+			if (Input.GetKey("c")){
+				SceneManager.LoadScene("CatchGame");
+			}
+
         //NOTE: delete this quit functionality when a Pause Menu is added!
                 // if (Input.GetKey("escape")){
                 //         Application.Quit();

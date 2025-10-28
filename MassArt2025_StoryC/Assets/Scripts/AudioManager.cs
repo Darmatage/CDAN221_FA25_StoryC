@@ -6,34 +6,56 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
-        public AudioSource MenuMusic;
-        public AudioSource GameMusic1;
-        public AudioSource EndWin;
-        public AudioSource EndLose;
-        public AudioSource EndFight;
+	public AudioSource MenuMusic;
+	public AudioSource GameMusic1;
+	public AudioSource EndWin;
+	public AudioSource EndLose;
+	public AudioSource EndFight;
 
-        private AudioSource theMusic;
-        private static float musicTimeStamp = 0.0f;
-        public float currentTimeStamp;
+	private AudioSource theMusic;
+	private static float musicTimeStamp = 0.0f;
+	public float currentTimeStamp;
 
-        void Awake(){
-                //set the music based on the scene
-                if ((SceneManager.GetActiveScene().name == "MainMenu")||(SceneManager.GetActiveScene().name == "Credits"))
-                { theMusic = MenuMusic; }
-                else if (SceneManager.GetActiveScene().name == "EndLose")
-                { theMusic = EndLose; }
-                else if (SceneManager.GetActiveScene().name == "EndWin")
-                { theMusic = EndWin; }
-                else if (SceneManager.GetActiveScene().name == "Scene10")
-                { theMusic = EndFight; }
-                else
-                {
-                        theMusic = GameMusic1;
-                }
+	void Awake(){
+		//set the music based on the scene
+		string thisScene = SceneManager.GetActiveScene().name;
+		if ((thisScene == "MainMenu") || (thisScene == "Credits"))
+		{
+			theMusic = MenuMusic; //39 seconds long
+								  
+			//check for music clip length problems, to prevent error: "invaid seek position"
+			if (musicTimeStamp < theMusic.clip.length)
+			{
+				//make the music continuous: set time for main menu & credits scenes:
+				theMusic.time = musicTimeStamp;
+			}
+		}
+		else if (thisScene == "EndLose")
+		{
+			theMusic = EndLose; //25 seconds long
+		}
+		else if (thisScene == "EndWin")
+		{
+			theMusic = EndWin; //49 seconds long
 
-                //set the time and play:
-                theMusic.time = musicTimeStamp;
-                theMusic.Play();
+		}
+		else if (thisScene == "Scene10")
+		{
+			theMusic = EndFight; //46 sconds long
+		}
+		else
+		{
+			theMusic = GameMusic1; // 33 seconds long
+			//check for music clip length problems, to prevent error: "invaid seek position"
+			if (musicTimeStamp < theMusic.clip.length)
+			{
+				//make the music continuous: set the time for game scenes:
+				theMusic.time = musicTimeStamp;
+			}
+		}
+
+		//play:
+		theMusic.Play();
         }
 
         void Update(){
