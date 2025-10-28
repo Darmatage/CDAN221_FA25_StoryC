@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 77d91154d1c054c1095516ab9aaf04e1
+guid: 3f6869bade0b6c341b9464cbcd29d7b2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6508602162377853085
-    second: bg_gym 1_0
+      213: -1582778884340145235
+    second: Paddle_arm_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_gym 1_0
+      name: Paddle_arm_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1280
-        height: 720
+        y: 68
+        width: 256
+        height: 69
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d980fd0ce23335a50800000000000000
-      internalID: 6508602162377853085
+      spriteID: da3aae89df6d80ae0800000000000000
+      internalID: -1582778884340145235
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_gym 1_0: 6508602162377853085
+      Paddle_arm_0: -1582778884340145235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
