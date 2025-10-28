@@ -7,13 +7,10 @@ public class PaddleMove : MonoBehaviour
     public Rigidbody2D rb;
     public float moveSpeed = 5f;
     public float xLimit = 8f;   // horizontal bounds
-    public float yLimit = 4.5f; // vertical bounds
 
     private Vector2 movement;
     private bool moveLeftOn = false;
     private bool moveRightOn = false;
-    private bool moveUpOn = false;
-    private bool moveDownOn = false;
 
     [Header("Game References")]
     public GameHandler_tree gameHandlerObj;
@@ -38,26 +35,23 @@ public class PaddleMove : MonoBehaviour
     {
         // 1️⃣ Get input
         movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement.y = 0; // remove vertical input
 
         // 2️⃣ Button input
         if (moveLeftOn) movement.x = -1;
         if (moveRightOn) movement.x = 1;
-        if (moveUpOn) movement.y = 1;
-        if (moveDownOn) movement.y = -1;
 
         // 3️⃣ Calculate next position
         Vector2 newPosition = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
 
-        // 4️⃣ Clamp within bounds
+        // 4️⃣ Clamp within horizontal bounds only
         newPosition.x = Mathf.Clamp(newPosition.x, -xLimit, xLimit);
-        newPosition.y = Mathf.Clamp(newPosition.y, -yLimit, yLimit);
 
         // 5️⃣ Move paddle
         rb.MovePosition(newPosition);
 
         // 6️⃣ Turn off instructions on first movement
-        if (!hasTouched && (movement.x != 0 || movement.y != 0))
+        if (!hasTouched && movement.x != 0)
         {
             instruct.SetActive(false);
             hasTouched = true;
@@ -94,8 +88,5 @@ public class PaddleMove : MonoBehaviour
     public void MoveLeftOff() => moveLeftOn = false;
     public void MoveRight() => moveRightOn = true;
     public void MoveRightOff() => moveRightOn = false;
-    public void MoveUp() => moveUpOn = true;
-    public void MoveUpOff() => moveUpOn = false;
-    public void MoveDown() => moveDownOn = true;
-    public void MoveDownOff() => moveDownOn = false;
 }
+
