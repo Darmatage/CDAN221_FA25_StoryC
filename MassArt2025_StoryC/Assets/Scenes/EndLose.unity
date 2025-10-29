@@ -1007,8 +1007,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: For a man like you detention was inevitable. Your only regret is not getting
-    your milk back...
+  m_text: For a man like you getting beat up and put in detention was inevitable.
+    Your only regret is not getting your milk back...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 26159f3292276a745add1f0b8d2116a1, type: 2}
   m_sharedMaterial: {fileID: 8403491748204854093, guid: 26159f3292276a745add1f0b8d2116a1, type: 2}
@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 338.74655, w: 0}
+  m_margin: {x: 0, y: -12.654449, z: 305.00125, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
