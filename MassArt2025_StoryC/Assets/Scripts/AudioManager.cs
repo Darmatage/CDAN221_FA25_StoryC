@@ -6,18 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour {
 
-        public AudioSource MenuMusic;
-        public AudioSource GameMusic1;
-        public AudioSource EndWin;
-        public AudioSource EndLose;
-        public AudioSource EndFight;
-        public AudioSource CatchGame;
+	public AudioSource MenuMusic;
+	public AudioSource GameMusic1;
+	public AudioSource EndWin;
+	public AudioSource EndLose;
+	public AudioSource EndFight;
+	public AudioSource CatchGame;
 
 	private AudioSource theMusic;
 	private static float musicTimeStamp = 0.0f;
 	public float currentTimeStamp;
 
-	void Awake(){
+	private AudioSource lastMusic;
+
+	void Awake() {
 		//set the music based on the scene
 		string thisScene = SceneManager.GetActiveScene().name;
 		if ((thisScene == "MainMenu") || (thisScene == "Credits"))
@@ -43,9 +45,9 @@ public class AudioManager : MonoBehaviour {
 		{
 			theMusic = EndFight; //46 sconds long
 		}
-		else if (SceneManager.GetActiveScene().name == "CatchGame")
+		else if (thisScene == "CatchGame")
 		{
-			theMusic = CatchGame; 
+			theMusic = CatchGame;
 		}
 		else
 		{
@@ -60,16 +62,31 @@ public class AudioManager : MonoBehaviour {
 
 		//play:
 		theMusic.Play();
-        }
+	}
 
-        void Update(){
-               //keep track of timestamp, to auto-call it in the next scene:
-               musicTimeStamp = theMusic.time;
-               currentTimeStamp = theMusic.time;
-        }
+	void Update() {
+		//keep track of timestamp, to auto-call it in the next scene:
+		musicTimeStamp = theMusic.time;
+		currentTimeStamp = theMusic.time;
+	}
 
-//change timestamp (can be called by door code):
-        public void SetTimeStamp(){
-               musicTimeStamp = theMusic.time;
-        }
+	//change timestamp (can be called by door code):
+	public void SetTimeStamp()
+	{
+		musicTimeStamp = theMusic.time;
+	}
+
+	//for credits scene:
+	public void musicButton(AudioSource buttonMusic)
+	{
+		theMusic.Stop();
+		if (lastMusic != null)
+		{
+			lastMusic.Stop();
+		}
+
+		buttonMusic.Play();
+		lastMusic = buttonMusic;
+	}
+
 }
