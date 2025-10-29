@@ -328,7 +328,8 @@ public void Next(){
                 Char1speech.text = "Can I have some money too?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                GameHandler.gotMoney = true;
+                GameHandler.gotCandy = true;
                 }
                 else if (primeInt == 45){
                 ArtChar1a.SetActive(false);
