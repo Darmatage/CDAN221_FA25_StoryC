@@ -19,7 +19,8 @@ public class GameHandler : MonoBehaviour{
         public static bool gotDodgeball = false; //GameHandler.gotLighter
         public static bool gotLighter = false; //GameHandler.gotLighter
         public static bool gotPizza = false; //GameHandler.gotPizza
-        public static bool gotMoney = false; //GameHandler.gotMoney
+        public static bool gotMoney = false;
+        public static bool gaveMaryJane = false; //GameHandler.gaveMaryJane
         public static float scene1annoyanceAmt = 0f; //GameHandler.moneyAmt
         // public GameObject textGameObject;
 
