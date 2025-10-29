@@ -16,8 +16,8 @@ public class Scene10Dialogue : MonoBehaviour {
         public TMP_Text Char2speech;
         public TMP_Text Char3name;
         public TMP_Text Char3speech;
-        //public TMP_Text Char4name;
-        //public TMP_Text Char4speech;
+        public TMP_Text Char4name;
+        public TMP_Text Char4speech;
        //public TMP_Text Char3name;
        //public TMP_Text Char3speech;
         public GameObject DialogueDisplay;
@@ -34,6 +34,7 @@ public class Scene10Dialogue : MonoBehaviour {
         public GameObject ArtChar1s;
         public GameObject ArtChar2a;
         public GameObject ArtChar2b;
+        public GameObject ArtChar3a;
         //public GameObject ArtCharteacher;
 //public GameObject ArtChar2;
         public GameObject ArtBG1;
@@ -74,6 +75,7 @@ public class Scene10Dialogue : MonoBehaviour {
              ArtChar2b.SetActive(false);
              ArtChar1i.SetActive(false);
         ArtChar1j.SetActive(false);
+        ArtChar3a.SetActive(false);
              //ArtCharteacher.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
@@ -124,10 +126,13 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
 
 //GameHandler.gotDodgeball = true;
 //GameHandler.sharkfreed = true;
 //GameHandler.gotSnot = true;
+//GameHandler.gaveMaryJane = true;
                 
                 }
                 else if (primeInt == 3){
@@ -869,6 +874,96 @@ public void Next(){
                 NextScene1Button.SetActive(true);   
 
         }
+        else if (primeInt == 801){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(false);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "???";
+                Char4speech.text = "Whats going on here?";
+
+        }
+        else if (primeInt == 802){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar3a.SetActive(true);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "Lunch Lady";
+                Char4speech.text = "Was just about to light that bone. Hey is this kid bothering you?";
+
+        }
+        else if (primeInt == 803){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar3a.SetActive(true);
+                
+                Char1name.text = "YOU";
+                Char1speech.text = "He took my milk!";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "";
+                Char4speech.text = "";
+
+        }
+        else if (primeInt == 804){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar3a.SetActive(true);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+                Char4name.text = "Lunch Lady";
+                Char4speech.text = "Alright kid. Lets get your milk back...";
+
+        }
+        else if (primeInt == 805){
+                //gameHandler.AddPlayerStat(1);
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
+                ArtChar1d.SetActive(false);
+                ArtChar1e.SetActive(false);
+                ArtChar1f.SetActive(false);
+                ArtChar3a.SetActive(true);
+                
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char3name.text = "BULLY";
+                Char3speech.text = "Uh... I want an adult.";
+                Char4name.text = "";
+                Char4speech.text = "";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true);   
+
+        }
+
 
         
 
@@ -951,12 +1046,12 @@ public void Next(){
                 nextButton.SetActive(true);
                 allowSpace = true;
                         
-                //if (GameHandler.sharkfreed == false){
+                if (GameHandler.gaveMaryJane == false){
                      primeInt = 400;
-                //}
-                //else{
-                     //primeInt = 500;
-                //}
+                }
+                else{
+                     primeInt = 800;
+                }
 
 }
 
