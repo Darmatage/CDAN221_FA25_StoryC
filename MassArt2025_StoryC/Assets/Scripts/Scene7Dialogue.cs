@@ -32,8 +32,10 @@ public class Scene7Dialogue : MonoBehaviour {
         public GameObject Choice1b;
         public GameObject Choice2a;
         public GameObject Choice2b;
+	public GameObject Choice3a;
+	public GameObject Choice3b;
         public GameObject NextScene1Button;
-        //public GameObject NextScene2Button;
+        public GameObject NextScene2Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -54,8 +56,10 @@ public class Scene7Dialogue : MonoBehaviour {
 		Choice1b.SetActive(false);
 		Choice2a.SetActive(false);
 		Choice2b.SetActive(false);
+		Choice3a.SetActive(false);
+		Choice3b.SetActive(false);
 		NextScene1Button.SetActive(false);
-		//NextScene2Button.SetActive(false);
+		NextScene2Button.SetActive(false);
 		nextButton.SetActive(true);
 	}
 
@@ -80,6 +84,7 @@ public class Scene7Dialogue : MonoBehaviour {
 		primeInt += 1;
         if (primeInt == 1){
                 // audioSource1.Play();
+	NextScene2Button.SetActive(false);
         }
 
         else if (primeInt == 2){
@@ -175,7 +180,11 @@ public class Scene7Dialogue : MonoBehaviour {
                 Char1speech.text = "";
                 Char2name.text = "Lunch Lady";
                 Char2speech.text = "Get lost.";
-                primeInt = 59;
+               // stop the "Next" button and show new choices
+    		nextButton.SetActive(false);
+   		allowSpace = false;
+  		Choice3a.SetActive(true); // Go to Scene 8
+		Choice3b.SetActive(true); // Go to Scene 10
         }
 
 
@@ -225,6 +234,7 @@ public class Scene7Dialogue : MonoBehaviour {
                
         }
        else if (primeInt == 31){
+		ArtLighter.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lunch Lady";
@@ -232,6 +242,7 @@ public class Scene7Dialogue : MonoBehaviour {
         }
 
         else if (primeInt == 32){
+		ArtLighter.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Thanks, hoe.";
                 Char2name.text = "";
@@ -239,14 +250,19 @@ public class Scene7Dialogue : MonoBehaviour {
         }
 
        else if (primeInt == 33){
-             ArtLighter.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lunch Lady";
-                Char2speech.text = "Here.";
-                primeInt = 59;
+                Char2speech.text = "Now, get lost twerp.";
                 //update stat: 
                 GameHandler.gotLighter = true;
+		
+   		// stop the "Next" button and show new choices
+    		nextButton.SetActive(false);
+   		allowSpace = false;
+  		Choice3a.SetActive(true); // Go to Scene 8
+		Choice3b.SetActive(true); // Go to Scene 10
+
         }
 
 //AFTER choice 2b: after "Ido YOU liek sharks?
@@ -256,25 +272,13 @@ public class Scene7Dialogue : MonoBehaviour {
                 Char1speech.text = "";
                 Char2name.text = "Lunch Lady";
                 Char2speech.text = "Get lost, kid. I don't have time for your nonsense.";
-                NextScene1Button.SetActive(true);
                 primeInt = 59;
-        }
-      
-  
-        else if (primeInt == 60){
-                ArtChar1a.SetActive(false);
-                ArtChar1b.SetActive(false);
-                ArtChar1c.SetActive(false);
-                
-                Char1name.text = "YOU";
-                Char1speech.text = "back to the hallway";
-                Char2name.text = "";
-                Char2speech.text = "";
 
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true); // function Choice1aFunct()
+               	// stop the "Next" button and show new choices
+    		nextButton.SetActive(false);
+   		allowSpace = false;
+  		Choice3a.SetActive(true); // Go to Scene 8
+		Choice3b.SetActive(true); // Go to Scene 10
         }
 
 
@@ -333,16 +337,35 @@ public class Scene7Dialogue : MonoBehaviour {
 
         
 
-         
+         	//CHOICE 3:
+	public void Choice3aFunct(){
+   		Char1name.text = "YOU";
+   		Char1speech.text = "I need to tinkle";
+   		Char2name.text = "";
+   		Char2speech.text = "";
+    		Choice3a.SetActive(false);
+    		Choice3b.SetActive(false);
+    		SceneManager.LoadScene("Scene8"); // Go to Scene 8
+	}
+
+	public void Choice3bFunct(){
+  		Char1name.text = "YOU";
+    		Char1speech.text = "I want to play now.";
+    		Char2name.text = "";
+    		Char2speech.text = "";
+    		Choice3a.SetActive(false);
+    		Choice3b.SetActive(false);
+    		SceneManager.LoadScene("Scene10"); // Go to Scene 10
+	}
 
 
         public void SceneChange1(){
-               SceneManager.LoadScene("Scene2b");
+               SceneManager.LoadScene("Scene10");
         }
 
         /*
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene2a");
+                SceneManager.LoadScene("Scene8");
         }
         */
               
