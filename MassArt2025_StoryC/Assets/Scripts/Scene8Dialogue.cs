@@ -168,7 +168,7 @@ public void Next(){
                 if (GameHandler.gotLighter == true){
 			Choice1a.SetActive(true);// function Choice1aFunct()
 		}
-                else if (GameHandler.gotLighter == false){
+                else{
                         Choice1a.SetActive(false);
                 }
         }
