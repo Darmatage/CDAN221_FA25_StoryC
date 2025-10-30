@@ -1,0 +1,31 @@
+fileFormatVersion: 2
+guid: b20edd4e51e0e7443bdef49433841af2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Char1name: {instanceID: 0}
+  - Char1speech: {instanceID: 0}
+  - Char2name: {instanceID: 0}
+  - Char2speech: {instanceID: 0}
+  - DialogueDisplay: {instanceID: 0}
+  - ArtChar1a: {instanceID: 0}
+  - ArtChar1b: {instanceID: 0}
+  - ArtChar1c: {instanceID: 0}
+  - ArtPizza: {instanceID: 0}
+  - ArtLighter: {instanceID: 0}
+  - ArtBG1: {instanceID: 0}
+  - Choice1a: {instanceID: 0}
+  - Choice1b: {instanceID: 0}
+  - Choice2a: {instanceID: 0}
+  - Choice2b: {instanceID: 0}
+  - Choice3a: {instanceID: 0}
+  - Choice3b: {instanceID: 0}
+  - NextScene1Button: {instanceID: 0}
+  - NextScene2Button: {instanceID: 0}
+  - nextButton: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
