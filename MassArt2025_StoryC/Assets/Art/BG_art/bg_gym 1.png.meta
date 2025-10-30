@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ad4d63276c62d43fb97df4a4c835620b
+guid: 77d91154d1c054c1095516ab9aaf04e1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6518084496325293994
-    second: bg_principals_office_0
+      213: 6508602162377853085
+    second: bg_gym 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_principals_office_0
+      name: bg_gym 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2085
-        height: 1173
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 658cc845fac1b85a0800000000000000
-      internalID: -6518084496325293994
+      spriteID: d980fd0ce23335a50800000000000000
+      internalID: 6508602162377853085
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_principals_office_0: -6518084496325293994
+      bg_gym 1_0: 6508602162377853085
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

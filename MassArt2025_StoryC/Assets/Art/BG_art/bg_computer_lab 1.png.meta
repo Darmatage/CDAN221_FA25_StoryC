@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 12beb583a5ace4bdc9cd2f84a571a3a8
+guid: cdfc0608e704144c888ed95c214f65f5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2225298981445554259
-    second: bg_bathroom_0
+      213: -3685410499972285830
+    second: bg_computer_lab 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_bathroom_0
+      name: bg_computer_lab 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2176
-        height: 1224
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 350d91c22a9d1ee10800000000000000
-      internalID: 2225298981445554259
+      spriteID: a7a38a92daacadcc0800000000000000
+      internalID: -3685410499972285830
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_bathroom_0: 2225298981445554259
+      bg_computer_lab 1_0: -3685410499972285830
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

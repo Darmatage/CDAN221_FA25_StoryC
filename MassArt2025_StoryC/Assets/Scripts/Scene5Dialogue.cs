@@ -328,7 +328,8 @@ public void Next(){
                 Char1speech.text = "Can I have some money too?";
                 Char2name.text = "";
                 Char2speech.text = "";
-                
+                GameHandler.gotMoney = true;
+                GameHandler.gotCandy = true;
                 }
                 else if (primeInt == 45){
                 ArtChar1a.SetActive(false);
@@ -511,7 +512,7 @@ public void Next(){
                SceneManager.LoadScene("Scene8");
         }
         public void SceneCafeteriaFunct(){
-                SceneManager.LoadScene("Scene7b");
+                SceneManager.LoadScene("Scene7");
         }
               
 }

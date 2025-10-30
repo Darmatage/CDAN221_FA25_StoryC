@@ -99,7 +99,7 @@ public class Scene7Dialogue : MonoBehaviour {
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Lunch Lady";
-                Char2speech.text = "Cafeteria";
+                Char2speech.text = "Welcome to the Cafeteria";
         }
         else if (primeInt == 4){
                 ArtChar1a.SetActive(true);

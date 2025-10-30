@@ -19,13 +19,19 @@ public class GameHandler : MonoBehaviour{
         public static bool gotDodgeball = false; //GameHandler.gotLighter
         public static bool gotLighter = false; //GameHandler.gotLighter
         public static bool gotPizza = false; //GameHandler.gotPizza
-        public static bool gotMoney = false; //GameHandler.gotMoney
+        public static bool gotMoney = false;
+        public static bool gaveMaryJane = false; //GameHandler.gaveMaryJane
         public static float scene1annoyanceAmt = 0f; //GameHandler.moneyAmt
         // public GameObject textGameObject;
 
         // void Start () { UpdateScore (); }
 
         void Update(){
+			//secret od to test ctch gme functionlity quickly in itch:
+			if (Input.GetKey("c")){
+				SceneManager.LoadScene("CatchGame");
+			}
+
         //NOTE: delete this quit functionality when a Pause Menu is added!
                 // if (Input.GetKey("escape")){
                 //         Application.Quit();
@@ -43,6 +49,21 @@ public class GameHandler : MonoBehaviour{
 
         public void StartGame(){
                 SceneManager.LoadScene("Scene1");
+                catchGameScore = 0;
+	        playedCatchGame = false;
+                sharkfreed = false;
+                beenToPrincipalsOffice = false;
+                gotMaryJane = false;
+                gotCandy = false;
+                gotGoldStar = false;
+                gotSnot = false;
+                gotComputerHardDrive = false;
+                gotDodgeball = false; //GameHandler.gotLighter
+                gotLighter = false; //GameHandler.gotLighter
+                gotPizza = false; //GameHandler.gotPizza
+                gotMoney = false;
+                gaveMaryJane = false; //GameHandler.gaveMaryJane
+                scene1annoyanceAmt = 0f; //GameHandler.moneyAmt
         }
 
         public void OpenCredits(){

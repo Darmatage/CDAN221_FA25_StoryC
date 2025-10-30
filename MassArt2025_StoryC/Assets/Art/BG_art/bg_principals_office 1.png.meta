@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: ee555c44eefb44e68b44ade60b00d8a8
+guid: c642191397fa445c5bfb5c456f8b3a60
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4263172012046010152
-    second: bg_computer_lab_0
+      213: -2405805937361343942
+    second: bg_principals_office 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_computer_lab_0
+      name: bg_principals_office 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2344
-        height: 1319
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d83c9d64ab26d4c0800000000000000
-      internalID: -4263172012046010152
+      spriteID: a3a2d091f3cdc9ed0800000000000000
+      internalID: -2405805937361343942
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_computer_lab_0: -4263172012046010152
+      bg_principals_office 1_0: -2405805937361343942
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -162,10 +162,18 @@ public void Next(){
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
+                
                 Choice1b.SetActive(true); // function Choice1bFunct()
-                Choice1c.SetActive(true); // function Choice1bFunct()
+                Choice1c.SetActive(true); // function Choice1cFunct()
+                if (GameHandler.gotLighter == true){
+			Choice1a.SetActive(true);// function Choice1aFunct()
+		}
+                else{
+                        Choice1a.SetActive(false);
+                }
         }
+		
+		
         else if (primeInt == 50){
                 ArtChar3a.SetActive(true);
                 ArtChar2d.SetActive(false);

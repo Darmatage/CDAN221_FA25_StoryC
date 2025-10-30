@@ -432,13 +432,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 357465926}
-  m_LocalRotation: {x: -0, y: -0, z: 0.04740742, w: 0.9988757}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.1816549, y: 1.0972, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1676102865}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 5.435}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 8, y: 16}
@@ -457,14 +457,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.9019608, g: 0.9019608, b: 0.9019608, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8535176193136803178, guid: a8372b54746214cd1b38be7aa9edeadb, type: 3}
+  m_Sprite: {fileID: -3453471919418478984, guid: 542ab77cef67e4ed9b25a1428794461c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2228,6 +2228,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1676102865}
     m_Modifications:
+    - target: {fileID: 4396654703697836, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4396654703697836, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 767863440521110420, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2311,6 +2319,18 @@ PrefabInstance:
     - target: {fileID: 3666980562473395398, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
       propertyPath: m_Name
       value: PAUSEMENUHANDLER
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6717569803397668802, guid: beebd646eb8e14425aafba1eb66dfbda, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

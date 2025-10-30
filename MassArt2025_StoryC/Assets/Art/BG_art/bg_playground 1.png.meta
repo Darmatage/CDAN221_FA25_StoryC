@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 415ee1dd3475b4daa9b18a99fe5093d8
+guid: 013f957bc690545b29d35037db29dd78
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7820067639837688169
-    second: bg_cafeteria_0
+      213: -880268658323979190
+    second: bg_playground 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_cafeteria_0
+      name: bg_playground 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2039
-        height: 1146
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79e72fff9e9897390800000000000000
-      internalID: -7820067639837688169
+      spriteID: a4480b1b158a8c3f0800000000000000
+      internalID: -880268658323979190
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_cafeteria_0: -7820067639837688169
+      bg_playground 1_0: -880268658323979190
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

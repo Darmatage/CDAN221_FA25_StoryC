@@ -1,69 +1,92 @@
-using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-public class PaddleMove : MonoBehaviour {
+public class PaddleMove : MonoBehaviour
+{
+    [Header("Movement")]
+    public Rigidbody2D rb;
+    public float moveSpeed = 5f;
+    public float xLimit = 8f;   // horizontal bounds
 
-     public Rigidbody2D rb;
-     public float moveSpeed = 5f;
-     public Vector2 movement;
-     public GameHandler_tree gameHandlerObj;
-	public GameObject hitVFX;
+    private Vector2 movement;
+    private bool moveLeftOn = false;
+    private bool moveRightOn = false;
 
-	public GameObject instruct;
-	private bool hasTouched = false;
+    [Header("Game References")]
+    public GameHandler_tree gameHandlerObj;
+    public GameObject hitVFX;
+    public GameObject instruct;
 
-     void Start(){
-          rb = GetComponent<Rigidbody2D> ();
-		if (GameObject.FindWithTag("GameHandler_tree") != null)
-		{
-			gameHandlerObj = GameObject.FindWithTag("GameHandler_tree").GetComponent<GameHandler_tree>();
-		}
-		instruct.SetActive(true);
-     }
+    private bool hasTouched = false;
 
-     void FixedUpdate(){
-          movement.x = Input.GetAxisRaw ("Horizontal");
-		rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    void Start()
+    {
+        rb = GetComponent<Rigidbody2D>();
 
-		if (!hasTouched)
-		{	
-			if ((Input.GetKeyDown("a")) ||
-				(Input.GetKeyDown("d")) || 
-				(Input.GetKeyDown("left")) ||
-				(Input.GetKeyDown("right"))
-			)
-			//if (Input.GetAxisRaw("Horizontal") != null)
-			{
-				instruct.SetActive(false);
-				hasTouched = true;
-			}
-		}
-     }
+        if (GameObject.FindWithTag("GameHandler_tree") != null)
+        {
+            gameHandlerObj = GameObject.FindWithTag("GameHandler_tree").GetComponent<GameHandler_tree>();
+        }
 
-     void OnCollisionEnter2D(Collision2D other){
-          if (other.gameObject.tag == "tree"){
-               gameObject.GetComponent<AudioSource>().Play();
-               GameObject boomFX = Instantiate(hitVFX, other.gameObject.transform.position, Quaternion.identity);
-               StartCoroutine(DestroyVFX(boomFX));
+        instruct.SetActive(true);
+    }
 
-               Destroy(other.gameObject);
-               gameHandlerObj.AddScore(1);
-          }
-          if (other.gameObject.tag == "eviltree"){
-               gameObject.GetComponent<AudioSource>().Play();
-               GameObject boomFX = Instantiate(hitVFX, other.gameObject.transform.position, Quaternion.identity);
-               StartCoroutine(DestroyVFX(boomFX));
+    void FixedUpdate()
+    {
+        // 1️⃣ Get input
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = 0; // remove vertical input
 
-               Destroy(other.gameObject);
-               gameHandlerObj.AddScore(-5);
-          }
-     }
+        // 2️⃣ Button input
+        if (moveLeftOn) movement.x = -1;
+        if (moveRightOn) movement.x = 1;
 
-     IEnumerator DestroyVFX(GameObject theEffect){
-          yield return new WaitForSeconds(0.5f);
-          Destroy(theEffect);
-          gameObject.GetComponent<AudioSource>().Stop();
-     }
+        // 3️⃣ Calculate next position
+        Vector2 newPosition = rb.position + movement * moveSpeed * Time.fixedDeltaTime;
 
+        // 4️⃣ Clamp within horizontal bounds only
+        newPosition.x = Mathf.Clamp(newPosition.x, -xLimit, xLimit);
+
+        // 5️⃣ Move paddle
+        rb.MovePosition(newPosition);
+
+        // 6️⃣ Turn off instructions on first movement
+        if (!hasTouched && movement.x != 0)
+        {
+            instruct.SetActive(false);
+            hasTouched = true;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("tree") || other.gameObject.CompareTag("eviltree"))
+        {
+            gameObject.GetComponent<AudioSource>().Play();
+
+            GameObject boomFX = Instantiate(hitVFX, other.transform.position, Quaternion.identity);
+            StartCoroutine(DestroyVFX(boomFX));
+
+            Destroy(other.gameObject);
+
+            if (other.gameObject.CompareTag("tree"))
+                gameHandlerObj.AddScore(1);
+            else
+                gameHandlerObj.AddScore(-5);
+        }
+    }
+
+    IEnumerator DestroyVFX(GameObject theEffect)
+    {
+        yield return new WaitForSeconds(0.5f);
+        Destroy(theEffect);
+        gameObject.GetComponent<AudioSource>().Stop();
+    }
+
+    // 🔹 Button input functions
+    public void MoveLeft() => moveLeftOn = true;
+    public void MoveLeftOff() => moveLeftOn = false;
+    public void MoveRight() => moveRightOn = true;
+    public void MoveRightOff() => moveRightOn = false;
 }
+

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 895ad8db41b514b5e9de178a1c52798c
+guid: a63b9e41e19dc244ca52cce9b0273e48
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9114018268942482908
-    second: ImageLunchladyc_0
+      213: 5264800161986700303
+    second: Char_Bully09_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ImageLunchladyc_0
+      name: Char_Bully09_0
       rect:
         serializedVersion: 2
-        x: 832
-        y: 37
-        width: 381
-        height: 646
+        x: 403
+        y: 0
+        width: 718
+        height: 710
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cddbcb4d35f7b7e70800000000000000
-      internalID: 9114018268942482908
+      spriteID: f04e2ac6ad3501940800000000000000
+      internalID: 5264800161986700303
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ImageLunchladyc_0: 9114018268942482908
+      Char_Bully09_0: 5264800161986700303
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

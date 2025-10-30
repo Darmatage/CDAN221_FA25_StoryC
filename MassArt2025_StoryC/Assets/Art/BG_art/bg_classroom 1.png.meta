@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: b18a5172c48f745ac903b455c1ce7e5e
+guid: 1f2d86094a27c43fa8b5d4e0773c5446
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6570762843490744208
-    second: bg_nurses_office_0
+      213: 7157677977989265363
+    second: bg_classroom 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bg_nurses_office_0
+      name: bg_classroom 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1619
-        height: 911
+        width: 1280
+        height: 720
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 097f9952ef9003b50800000000000000
-      internalID: 6570762843490744208
+      spriteID: 3d7bfaea23e255360800000000000000
+      internalID: 7157677977989265363
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      bg_nurses_office_0: 6570762843490744208
+      bg_classroom 1_0: 7157677977989265363
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
