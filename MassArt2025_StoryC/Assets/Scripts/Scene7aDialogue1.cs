@@ -146,6 +146,7 @@ public class Scene7aDialogue : MonoBehaviour {
                 Char2speech.text = "";
  	}
         else if (primeInt == 9){
+		GameHandler.gaveMaryJane = true;
 		ArtLighter.SetActive(false);
                 ArtChar1a.SetActive(true);
                 Char1name.text = "";

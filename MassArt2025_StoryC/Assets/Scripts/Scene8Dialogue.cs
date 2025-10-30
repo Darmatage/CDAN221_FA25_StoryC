@@ -48,6 +48,7 @@ public class Scene8Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
+	public GameObject NextScene5Button;
         
         public GameObject nextButton;
        //public AudioSource audioSource1;
@@ -83,6 +84,7 @@ public class Scene8Dialogue : MonoBehaviour {
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
              NextScene4Button.SetActive(false);
+	     NextScene5Button.SetActive(false);
 
              ArtBG1.SetActive(true);
              nextButton.SetActive(true);
@@ -427,8 +429,8 @@ public void Next(){
                 Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
+                NextScene5Button.SetActive(true);
+                
         }
 
 
@@ -524,8 +526,8 @@ public void Next(){
         public void SceneChange4(){
                 SceneManager.LoadScene("EndLose");     //LOSE
         }
-
-
-
+ 	public void SceneChange5(){
+               SceneManager.LoadScene("Scene7a");       //Cafeteria7a
 
 }
+	}
