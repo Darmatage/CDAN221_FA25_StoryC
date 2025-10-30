@@ -19,8 +19,8 @@ public class Scene7aDialogue : MonoBehaviour {
 
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-        public GameObject ArtChar1b;
-        public GameObject ArtChar1c;
+        //public GameObject ArtChar1b;
+        //public GameObject ArtChar1c;
        
 
         public GameObject ArtPizza;
@@ -45,8 +45,8 @@ public class Scene7aDialogue : MonoBehaviour {
 	void Start(){  
 		DialogueDisplay.SetActive(false);
 		ArtChar1a.SetActive(false);
-		ArtChar1b.SetActive(false);
-		ArtChar1c.SetActive(false);
+		//ArtChar1b.SetActive(false);
+		//ArtChar1c.SetActive(false);
 		
 		ArtPizza.SetActive(false);
 		ArtLighter.SetActive(false);

@@ -904,6 +904,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 347368c1c8226ae489b0b6c2954a1cbe, type: 3}
+--- !u!1 &1267024810 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
+  m_PrefabInstance: {fileID: 1593778859}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1305535685
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1508,19 +1513,17 @@ MonoBehaviour:
   Char2speech: {fileID: 155029694}
   DialogueDisplay: {fileID: 1835552486}
   ArtChar1a: {fileID: 244843956}
-  ArtChar1b: {fileID: 0}
-  ArtChar1c: {fileID: 0}
-  ArtPizza: {fileID: 0}
+  ArtPizza: {fileID: 2052817654}
   ArtLighter: {fileID: 1453990720}
-  ArtBG1: {fileID: 0}
-  Choice1a: {fileID: 0}
-  Choice1b: {fileID: 0}
-  Choice2a: {fileID: 0}
-  Choice2b: {fileID: 0}
-  Choice3a: {fileID: 0}
-  Choice3b: {fileID: 0}
-  NextScene1Button: {fileID: 0}
-  NextScene2Button: {fileID: 0}
+  ArtBG1: {fileID: 1931795245}
+  Choice1a: {fileID: 1267024810}
+  Choice1b: {fileID: 1267024810}
+  Choice2a: {fileID: 1267024810}
+  Choice2b: {fileID: 1267024810}
+  Choice3a: {fileID: 1267024810}
+  Choice3b: {fileID: 1267024810}
+  NextScene1Button: {fileID: 1267024810}
+  NextScene2Button: {fileID: 1267024810}
   nextButton: {fileID: 1474008141}
 --- !u!1001 &1730188517
 PrefabInstance:
@@ -2028,7 +2031,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1209806315288612557, guid: f1e904da440d44d7c829f0b591f8f467, type: 3}
+  m_Sprite: {fileID: -1466329539511734023, guid: 92dbdcb04d67ca54097c9d73c08cf30e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

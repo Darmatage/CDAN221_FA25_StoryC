@@ -35,7 +35,7 @@ public class Scene7Dialogue : MonoBehaviour {
 	public GameObject Choice3a;
 	public GameObject Choice3b;
         public GameObject NextScene1Button;
-        public GameObject NextScene2Button;
+        //public GameObject NextScene2Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -59,7 +59,7 @@ public class Scene7Dialogue : MonoBehaviour {
 		Choice3a.SetActive(false);
 		Choice3b.SetActive(false);
 		NextScene1Button.SetActive(false);
-		NextScene2Button.SetActive(false);
+		//Button.SetActive(false);
 		nextButton.SetActive(true);
 	}
 
@@ -84,7 +84,7 @@ public class Scene7Dialogue : MonoBehaviour {
 		primeInt += 1;
         if (primeInt == 1){
                 // audioSource1.Play();
-	NextScene2Button.SetActive(false);
+	//NextScene2Button.SetActive(false);
         }
 
         else if (primeInt == 2){

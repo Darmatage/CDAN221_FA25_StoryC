@@ -429,6 +429,7 @@ public void Next(){
                 Char3speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
+                NextScene2Button.SetActive(true);
                 NextScene5Button.SetActive(true);
                 
         }
@@ -527,7 +528,7 @@ public void Next(){
                 SceneManager.LoadScene("EndLose");     //LOSE
         }
  	public void SceneChange5(){
-               SceneManager.LoadScene("Scene7a");       //Cafeteria7a
+                SceneManager.LoadScene("Scene7a");       //Cafeteria7a
 
 }
 	}

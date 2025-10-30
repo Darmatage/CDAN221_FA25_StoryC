@@ -133,7 +133,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change5
+      value: Button_NextScene5
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_IsActive
@@ -1491,7 +1491,7 @@ MonoBehaviour:
   NextScene2Button: {fileID: 2002706322}
   NextScene3Button: {fileID: 1979864327}
   NextScene4Button: {fileID: 1935817467}
-  NextScene5Button: {fileID: 0}
+  NextScene5Button: {fileID: 1957916723}
   nextButton: {fileID: 1503040817}
 --- !u!1001 &735458823
 PrefabInstance:
@@ -1507,7 +1507,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change3
+      value: Button_NextScene3
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_IsActive
@@ -2231,7 +2231,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change2
+      value: Button_NextScene2
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_IsActive
@@ -2556,7 +2556,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change4
+      value: Button_NextScene4
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_IsActive
@@ -2677,7 +2677,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_Name
-      value: Button_Change1
+      value: Button_NextScene1
       objectReference: {fileID: 0}
     - target: {fileID: 6040262177948471608, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3045,6 +3045,11 @@ GameObject:
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7179293409352509751, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
   m_PrefabInstance: {fileID: 1677692801}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1957916723 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4573493227609317909, guid: 1f181ad5f7f0de54ab7891dad03c9f99, type: 3}
+  m_PrefabInstance: {fileID: 37716324}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1979864327 stripped
 GameObject:
