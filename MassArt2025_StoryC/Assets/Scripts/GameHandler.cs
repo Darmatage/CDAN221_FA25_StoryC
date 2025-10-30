@@ -49,6 +49,21 @@ public class GameHandler : MonoBehaviour{
 
         public void StartGame(){
                 SceneManager.LoadScene("Scene1");
+                catchGameScore = 0;
+	        playedCatchGame = false;
+                sharkfreed = false;
+                beenToPrincipalsOffice = false;
+                gotMaryJane = false;
+                gotCandy = false;
+                gotGoldStar = false;
+                gotSnot = false;
+                gotComputerHardDrive = false;
+                gotDodgeball = false; //GameHandler.gotLighter
+                gotLighter = false; //GameHandler.gotLighter
+                gotPizza = false; //GameHandler.gotPizza
+                gotMoney = false;
+                gaveMaryJane = false; //GameHandler.gaveMaryJane
+                scene1annoyanceAmt = 0f; //GameHandler.moneyAmt
         }
 
         public void OpenCredits(){
