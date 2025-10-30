@@ -102,7 +102,7 @@ public void Next(){
         ArtChar1d.SetActive(false);
 
         Char1name.text = "You";
-        Char1speech.text = "Ugh, another day in Miss Smiths class...";
+        Char1speech.text = "Ugh, another day in Miss Smith's class...";
         Char2name.text = "";
         Char2speech.text = "";
         Char3name.text = "";
@@ -272,7 +272,7 @@ else if (primeInt == 5){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Miss Smith";
-                Char3speech.text = "YOU! I FORGET YOUR NAME. GO TO THE PRINCIPALS OFFICE!";
+                Char3speech.text = "YOU! I FORGET YOUR NAME. GO TO THE PRINCIPAL'S OFFICE!";
                 NextScene1Button.SetActive(true);
                 nextButton.SetActive(false);
                 allowSpace = false;

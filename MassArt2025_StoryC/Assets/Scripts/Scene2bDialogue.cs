@@ -109,7 +109,7 @@ public void Next(){
                 ArtChar1a.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "I don't even know where the principals office is-";
+                Char1speech.text = "I don't even know where the principal's office is-";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -130,7 +130,7 @@ public void Next(){
                 ArtChar1d.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "YOU";
-                Char1speech.text = "Im just trying to get to the principals offi-";
+                Char1speech.text = "Im just trying to get to the principal's offi-";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -143,7 +143,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
-                Char2speech.text = "You are in the hall without a hall pass! That is against the law so I am forced to take you to the PRINCIPALS OFFICE!";
+                Char2speech.text = "You are in the hall without a hall pass! That is against the law so I am forced to take you to the PRINCIPAL'S OFFICE!";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
@@ -486,7 +486,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
-                Char2speech.text = "I'm taking you to the PRINCIPALS OFFICE.";
+                Char2speech.text = "I'm taking you to the PRINCIPAL'S OFFICE.";
                 Char3name.text = "";
                 Char3speech.text = "";
                 nextButton.SetActive(false);
@@ -600,7 +600,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Hall Monitor";
-                Char2speech.text = "Awesome! Lets go to the Science Lab then. I heard theres a shark in there.";
+                Char2speech.text = "Awesome! Lets go to the Science Lab then. I heard there's a shark in there.";
                 Char3name.text = "";
                 Char3speech.text = "";
                 nextButton.SetActive(false);

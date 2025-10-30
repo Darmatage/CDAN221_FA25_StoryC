@@ -118,7 +118,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Booger Kid";
-                Char2speech.text = "Thats not my name.";
+                Char2speech.text = "That's not my name.";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
@@ -194,7 +194,7 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "Bully";
-                Char3speech.text = "Whats in that Jar? Give it to me.";
+                Char3speech.text = "What's in that Jar? Give it to me.";
          }
         else if (primeInt == 12){
                 ArtChar1c.SetActive(true);
