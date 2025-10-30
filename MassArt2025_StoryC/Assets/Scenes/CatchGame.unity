@@ -2074,7 +2074,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb: {fileID: 100312913626212755}
   moveSpeed: 25
-  movement: {x: 0, y: 0}
+  xLimit: 8
   gameHandlerObj: {fileID: 4734926931572990730}
   hitVFX: {fileID: 5747315536244097195, guid: fc14207f2a89b4a9ea8f69260f71dbe9, type: 3}
   instruct: {fileID: 650200313}
@@ -2247,7 +2247,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: c5d72dc23219c4111861d7cecdd213bc, type: 3}
   m_Resource: {fileID: 8300000, guid: c5d72dc23219c4111861d7cecdd213bc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0

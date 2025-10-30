@@ -512,7 +512,7 @@ public void Next(){
                SceneManager.LoadScene("Scene8");
         }
         public void SceneCafeteriaFunct(){
-                SceneManager.LoadScene("Scene7b");
+                SceneManager.LoadScene("Scene7");
         }
               
 }
